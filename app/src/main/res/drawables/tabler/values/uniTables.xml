@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="uniBlocks">
+        <item>Adlam</item>
+        <item>Aegean Numbers</item>
+        <item>Ahom</item>
+        <item>Alchemical Symbols</item>
+        <item>Alphabetic Presentation Forms</item>
+        <item>Anatolian Hieroglyphs</item>
+        <item>Ancient Greek Musical Notation</item>
+        <item>Ancient Greek Numbers</item>
+        <item>Ancient Symbols</item>
+        <item>Arabic</item>
+        <item>Arabic Extended-A</item>
+        <item>Arabic Mathematical Alphabetic Symbols</item>
+        <item>Arabic Presentation Forms-A</item>
+        <item>Arabic Presentation Forms-B</item>
+        <item>Arabic Supplement</item>
+        <item>Armenian</item>
+        <item>Arrows</item>
+        <item>Avestan</item>
+        <item>Balinese</item>
+        <item>Bamum</item>
+        <item>Bamum Supplement</item>
+        <item>Basic Latin</item>
+        <item>Bassa Vah</item>
+        <item>Batak</item>
+        <item>Bengali</item>
+        <item>Bhaiksuki</item>
+        <item>Block Elements</item>
+        <item>Bopomofo</item>
+        <item>Bopomofo Extended</item>
+        <item>Box Drawing</item>
+        <item>Brahmi</item>
+        <item>Braille Patterns</item>
+        <item>Buginese</item>
+        <item>Buhid</item>
+        <item>Byzantine Musical Symbols</item>
+        <item>Carian</item>
+        <item>Caucasian Albanian</item>
+        <item>Chakma</item>
+        <item>Cham</item>
+        <item>Cherokee</item>
+        <item>Cherokee Supplement</item>
+        <item>Chess Symbols</item>
+        <item>CJK Compatibility</item>
+        <item>CJK Compatibility Forms</item>
+        <item>CJK Compatibility Ideographs</item>
+        <item>CJK Compatibility Ideographs Supplement</item>
+        <item>CJK Radicals Supplement</item>
+        <item>CJK Strokes</item>
+        <item>CJK Symbols and Punctuation</item>
+        <item>CJK Unified Ideographs</item>
+        <item>CJK Unified Ideographs Extension A</item>
+        <item>CJK Unified Ideographs Extension B</item>
+        <item>CJK Unified Ideographs Extension C</item>
+        <item>CJK Unified Ideographs Extension D</item>
+        <item>CJK Unified Ideographs Extension E</item>
+        <item>CJK Unified Ideographs Extension F</item>
+        <item>Combining Diacritical Marks</item>
+        <item>Combining Diacritical Marks Extended</item>
+        <item>Combining Diacritical Marks for Symbols</item>
+        <item>Combining Diacritical Marks Supplement</item>
+        <item>Combining Half Marks</item>
+        <item>Common Indic Number Forms</item>
+        <item>Control Pictures</item>
+        <item>Coptic</item>
+        <item>Coptic Epact Numbers</item>
+        <item>Counting Rod Numerals</item>
+        <item>Cuneiform</item>
+        <item>Cuneiform Numbers and Punctuation</item>
+        <item>Currency Symbols</item>
+        <item>Cypriot Syllabary</item>
+        <item>Cyrillic</item>
+        <item>Cyrillic Extended-A</item>
+        <item>Cyrillic Extended-B</item>
+        <item>Cyrillic Extended-C</item>
+        <item>Cyrillic Supplement</item>
+        <item>Deseret</item>
+        <item>Devanagari</item>
+        <item>Devanagari Extended</item>
+        <item>Dingbats</item>
+        <item>Dogra</item>
+        <item>Domino Tiles</item>
+        <item>Duployan</item>
+        <item>Early Dynastic Cuneiform</item>
+        <item>Egyptian Hieroglyph Format Controls</item>
+        <item>Egyptian Hieroglyphs</item>
+        <item>Elbasan</item>
+        <item>Elymaic</item>
+        <item>Emoticons</item>
+        <item>Enclosed Alphanumeric Supplement</item>
+        <item>Enclosed Alphanumerics</item>
+        <item>Enclosed CJK Letters and Months</item>
+        <item>Enclosed Ideographic Supplement</item>
+        <item>Ethiopic</item>
+        <item>Ethiopic Extended</item>
+        <item>Ethiopic Extended-A</item>
+        <item>Ethiopic Supplement</item>
+        <item>General Punctuation</item>
+        <item>Geometric Shapes</item>
+        <item>Geometric Shapes Extended</item>
+        <item>Georgian</item>
+        <item>Georgian Extended</item>
+        <item>Georgian Supplement</item>
+        <item>Glagolitic</item>
+        <item>Glagolitic Supplement</item>
+        <item>Gothic</item>
+        <item>Grantha</item>
+        <item>Greek and Coptic</item>
+        <item>Greek Extended</item>
+        <item>Gujarati</item>
+        <item>Gunjala Gondi</item>
+        <item>Gurmukhi</item>
+        <item>Halfwidth and Fullwidth Forms</item>
+        <item>Hangul Compatibility Jamo</item>
+        <item>Hangul Jamo</item>
+        <item>Hangul Jamo Extended-A</item>
+        <item>Hangul Jamo Extended-B</item>
+        <item>Hangul Syllables</item>
+        <item>Hanifi Rohingya</item>
+        <item>Hanunoo</item>
+        <item>Hatran</item>
+        <item>Hebrew</item>
+        <item>High Private Use Surrogates</item>
+        <item>High Surrogates</item>
+        <item>Hiragana</item>
+        <item>Ideographic Description Characters</item>
+        <item>Ideographic Symbols and Punctuation</item>
+        <item>Imperial Aramaic</item>
+        <item>Indic Siyaq Numbers</item>
+        <item>Inscriptional Pahlavi</item>
+        <item>Inscriptional Parthian</item>
+        <item>IPA Extensions</item>
+        <item>Javanese</item>
+        <item>Kaithi</item>
+        <item>Kana Extended-A</item>
+        <item>Kana Supplement</item>
+        <item>Kanbun</item>
+        <item>Kangxi Radicals</item>
+        <item>Kannada</item>
+        <item>Katakana</item>
+        <item>Katakana Phonetic Extensions</item>
+        <item>Kayah Li</item>
+        <item>Kharoshthi</item>
+        <item>Khmer</item>
+        <item>Khmer Symbols</item>
+        <item>Khojki</item>
+        <item>Khudawadi</item>
+        <item>Lao</item>
+        <item>Latin Extended Additional</item>
+        <item>Latin Extended-A</item>
+        <item>Latin Extended-B</item>
+        <item>Latin Extended-C</item>
+        <item>Latin Extended-D</item>
+        <item>Latin Extended-E</item>
+        <item>Latin-1 Supplement</item>
+        <item>Lepcha</item>
+        <item>Letterlike Symbols</item>
+        <item>Limbu</item>
+        <item>Linear A</item>
+        <item>Linear B Ideograms</item>
+        <item>Linear B Syllabary</item>
+        <item>Lisu</item>
+        <item>Low Surrogates</item>
+        <item>Lycian</item>
+        <item>Lydian</item>
+        <item>Mahajani</item>
+        <item>Mahjong Tiles</item>
+        <item>Makasar</item>
+        <item>Malayalam</item>
+        <item>Mandaic</item>
+        <item>Manichaean</item>
+        <item>Marchen</item>
+        <item>Masaram Gondi</item>
+        <item>Mathematical Alphanumeric Symbols</item>
+        <item>Mathematical Operators</item>
+        <item>Mayan Numerals</item>
+        <item>Medefaidrin</item>
+        <item>Meetei Mayek</item>
+        <item>Meetei Mayek Extensions</item>
+        <item>Mende Kikakui</item>
+        <item>Meroitic Cursive</item>
+        <item>Meroitic Hieroglyphs</item>
+        <item>Miao</item>
+        <item>Miscellaneous Mathematical Symbols-A</item>
+        <item>Miscellaneous Mathematical Symbols-B</item>
+        <item>Miscellaneous Symbols</item>
+        <item>Miscellaneous Symbols and Arrows</item>
+        <item>Miscellaneous Symbols and Pictographs</item>
+        <item>Miscellaneous Technical</item>
+        <item>Modi</item>
+        <item>Modifier Tone Letters</item>
+        <item>Mongolian</item>
+        <item>Mongolian Supplement</item>
+        <item>Mro</item>
+        <item>Multani</item>
+        <item>Musical Symbols</item>
+        <item>Myanmar</item>
+        <item>Myanmar Extended-A</item>
+        <item>Myanmar Extended-B</item>
+        <item>Nabataean</item>
+        <item>Nandinagari</item>
+        <item>New Tai Lue</item>
+        <item>Newa</item>
+        <item>NKo</item>
+        <item>Number Forms</item>
+        <item>Nushu</item>
+        <item>Nyiakeng Puachue Hmong</item>
+        <item>Ogham</item>
+        <item>Ol Chiki</item>
+        <item>Old Hungarian</item>
+        <item>Old Italic</item>
+        <item>Old North Arabian</item>
+        <item>Old Permic</item>
+        <item>Old Persian</item>
+        <item>Old Sogdian</item>
+        <item>Old South Arabian</item>
+        <item>Old Turkic</item>
+        <item>Optical Character Recognition</item>
+        <item>Oriya</item>
+        <item>Ornamental Dingbats</item>
+        <item>Osage</item>
+        <item>Osmanya</item>
+        <item>Ottoman Siyaq Numbers</item>
+        <item>Pahawh Hmong</item>
+        <item>Palmyrene</item>
+        <item>Pau Cin Hau</item>
+        <item>Phags-pa</item>
+        <item>Phaistos Disc</item>
+        <item>Phoenician</item>
+        <item>Phonetic Extensions</item>
+        <item>Phonetic Extensions Supplement</item>
+        <item>Playing Cards</item>
+        <item>Private Use Area</item>
+        <item>Psalter Pahlavi</item>
+        <item>Rejang</item>
+        <item>Rumi Numeral Symbols</item>
+        <item>Runic</item>
+        <item>Samaritan</item>
+        <item>Saurashtra</item>
+        <item>Sharada</item>
+        <item>Shavian</item>
+        <item>Shorthand Format Controls</item>
+        <item>Siddham</item>
+        <item>Sinhala</item>
+        <item>Sinhala Archaic Numbers</item>
+        <item>Small Form Variants</item>
+        <item>Small Kana Extension</item>
+        <item>Sogdian</item>
+        <item>Sora Sompeng</item>
+        <item>Soyombo</item>
+        <item>Spacing Modifier Letters</item>
+        <item>Specials</item>
+        <item>Sundanese</item>
+        <item>Sundanese Supplement</item>
+        <item>Superscripts and Subscripts</item>
+        <item>Supplemental Arrows-A</item>
+        <item>Supplemental Arrows-B</item>
+        <item>Supplemental Arrows-C</item>
+        <item>Supplemental Mathematical Operators</item>
+        <item>Supplemental Punctuation</item>
+        <item>Supplemental Symbols and Pictographs</item>
+        <item>Supplementary Private Use Area-A</item>
+        <item>Supplementary Private Use Area-B</item>
+        <item>Sutton SignWriting</item>
+        <item>Syloti Nagri</item>
+        <item>Symbols and Pictographs Extended-A</item>
+        <item>Syriac</item>
+        <item>Syriac Supplement</item>
+        <item>Tagalog</item>
+        <item>Tagbanwa</item>
+        <item>Tags</item>
+        <item>Tai Le</item>
+        <item>Tai Tham</item>
+        <item>Tai Viet</item>
+        <item>Tai Xuan Jing Symbols</item>
+        <item>Takri</item>
+        <item>Tamil</item>
+        <item>Tamil Supplement</item>
+        <item>Tangut</item>
+        <item>Tangut Components</item>
+        <item>Telugu</item>
+        <item>Thaana</item>
+        <item>Thai</item>
+        <item>Tibetan</item>
+        <item>Tifinagh</item>
+        <item>Tirhuta</item>
+        <item>Transport and Map Symbols</item>
+        <item>Ugaritic</item>
+        <item>Unified Canadian Aboriginal Syllabics</item>
+        <item>Unified Canadian Aboriginal Syllabics Extended</item>
+        <item>Vai</item>
+        <item>Variation Selectors</item>
+        <item>Variation Selectors Supplement</item>
+        <item>Vedic Extensions</item>
+        <item>Vertical Forms</item>
+        <item>Wancho</item>
+        <item>Warang Citi</item>
+        <item>Yi Radicals</item>
+        <item>Yi Syllables</item>
+        <item>Yijing Hexagram Symbols</item>
+        <item>Zanabazar Square</item>
+    </array>
+
+    <array name="blockStart">
+        <item>0x1E900</item>
+        <item>0x10100</item>
+        <item>0x11700</item>
+        <item>0x1F700</item>
+        <item>0xFB00</item>
+        <item>0x14400</item>
+        <item>0x1D200</item>
+        <item>0x10140</item>
+        <item>0x10190</item>
+        <item>0x0600</item>
+        <item>0x08A0</item>
+        <item>0x1EE00</item>
+        <item>0xFB50</item>
+        <item>0xFE70</item>
+        <item>0x0750</item>
+        <item>0x0530</item>
+        <item>0x2190</item>
+        <item>0x10B00</item>
+        <item>0x1B00</item>
+        <item>0xA6A0</item>
+        <item>0x16800</item>
+        <item>0x0000</item>
+        <item>0x16AD0</item>
+        <item>0x1BC0</item>
+        <item>0x0980</item>
+        <item>0x11C00</item>
+        <item>0x2580</item>
+        <item>0x3100</item>
+        <item>0x31A0</item>
+        <item>0x2500</item>
+        <item>0x11000</item>
+        <item>0x2800</item>
+        <item>0x1A00</item>
+        <item>0x1740</item>
+        <item>0x1D000</item>
+        <item>0x102A0</item>
+        <item>0x10530</item>
+        <item>0x11100</item>
+        <item>0xAA00</item>
+        <item>0x13A0</item>
+        <item>0xAB70</item>
+        <item>0x1FA00</item>
+        <item>0x3300</item>
+        <item>0xFE30</item>
+        <item>0xF900</item>
+        <item>0x2F800</item>
+        <item>0x2E80</item>
+        <item>0x31C0</item>
+        <item>0x3000</item>
+        <item>0x4E00</item>
+        <item>0x3400</item>
+        <item>0x20000</item>
+        <item>0x2A700</item>
+        <item>0x2B740</item>
+        <item>0x2B820</item>
+        <item>0x2CEB0</item>
+        <item>0x0300</item>
+        <item>0x1AB0</item>
+        <item>0x20D0</item>
+        <item>0x1DC0</item>
+        <item>0xFE20</item>
+        <item>0xA830</item>
+        <item>0x2400</item>
+        <item>0x2C80</item>
+        <item>0x102E0</item>
+        <item>0x1D360</item>
+        <item>0x12000</item>
+        <item>0x12400</item>
+        <item>0x20A0</item>
+        <item>0x10800</item>
+        <item>0x0400</item>
+        <item>0x2DE0</item>
+        <item>0xA640</item>
+        <item>0x1C80</item>
+        <item>0x0500</item>
+        <item>0x10400</item>
+        <item>0x0900</item>
+        <item>0xA8E0</item>
+        <item>0x2700</item>
+        <item>0x11800</item>
+        <item>0x1F030</item>
+        <item>0x1BC00</item>
+        <item>0x12480</item>
+        <item>0x13430</item>
+        <item>0x13000</item>
+        <item>0x10500</item>
+        <item>0x10FE0</item>
+        <item>0x1F600</item>
+        <item>0x1F100</item>
+        <item>0x2460</item>
+        <item>0x3200</item>
+        <item>0x1F200</item>
+        <item>0x1200</item>
+        <item>0x2D80</item>
+        <item>0xAB00</item>
+        <item>0x1380</item>
+        <item>0x2000</item>
+        <item>0x25A0</item>
+        <item>0x1F780</item>
+        <item>0x10A0</item>
+        <item>0x1C90</item>
+        <item>0x2D00</item>
+        <item>0x2C00</item>
+        <item>0x1E000</item>
+        <item>0x10330</item>
+        <item>0x11300</item>
+        <item>0x0370</item>
+        <item>0x1F00</item>
+        <item>0x0A80</item>
+        <item>0x11D60</item>
+        <item>0x0A00</item>
+        <item>0xFF00</item>
+        <item>0x3130</item>
+        <item>0x1100</item>
+        <item>0xA960</item>
+        <item>0xD7B0</item>
+        <item>0xAC00</item>
+        <item>0x10D00</item>
+        <item>0x1720</item>
+        <item>0x108E0</item>
+        <item>0x0590</item>
+        <item>0xDB80</item>
+        <item>0xD800</item>
+        <item>0x3040</item>
+        <item>0x2FF0</item>
+        <item>0x16FE0</item>
+        <item>0x10840</item>
+        <item>0x1EC70</item>
+        <item>0x10B60</item>
+        <item>0x10B40</item>
+        <item>0x0250</item>
+        <item>0xA980</item>
+        <item>0x11080</item>
+        <item>0x1B100</item>
+        <item>0x1B000</item>
+        <item>0x3190</item>
+        <item>0x2F00</item>
+        <item>0x0C80</item>
+        <item>0x30A0</item>
+        <item>0x31F0</item>
+        <item>0xA900</item>
+        <item>0x10A00</item>
+        <item>0x1780</item>
+        <item>0x19E0</item>
+        <item>0x11200</item>
+        <item>0x112B0</item>
+        <item>0x0E80</item>
+        <item>0x1E00</item>
+        <item>0x0100</item>
+        <item>0x0180</item>
+        <item>0x2C60</item>
+        <item>0xA720</item>
+        <item>0xAB30</item>
+        <item>0x0080</item>
+        <item>0x1C00</item>
+        <item>0x2100</item>
+        <item>0x1900</item>
+        <item>0x10600</item>
+        <item>0x10080</item>
+        <item>0x10000</item>
+        <item>0xA4D0</item>
+        <item>0xDC00</item>
+        <item>0x10280</item>
+        <item>0x10920</item>
+        <item>0x11150</item>
+        <item>0x1F000</item>
+        <item>0x11EE0</item>
+        <item>0x0D00</item>
+        <item>0x0840</item>
+        <item>0x10AC0</item>
+        <item>0x11C70</item>
+        <item>0x11D00</item>
+        <item>0x1D400</item>
+        <item>0x2200</item>
+        <item>0x1D2E0</item>
+        <item>0x16E40</item>
+        <item>0xABC0</item>
+        <item>0xAAE0</item>
+        <item>0x1E800</item>
+        <item>0x109A0</item>
+        <item>0x10980</item>
+        <item>0x16F00</item>
+        <item>0x27C0</item>
+        <item>0x2980</item>
+        <item>0x2600</item>
+        <item>0x2B00</item>
+        <item>0x1F300</item>
+        <item>0x2300</item>
+        <item>0x11600</item>
+        <item>0xA700</item>
+        <item>0x1800</item>
+        <item>0x11660</item>
+        <item>0x16A40</item>
+        <item>0x11280</item>
+        <item>0x1D100</item>
+        <item>0x1000</item>
+        <item>0xAA60</item>
+        <item>0xA9E0</item>
+        <item>0x10880</item>
+        <item>0x119A0</item>
+        <item>0x1980</item>
+        <item>0x11400</item>
+        <item>0x07C0</item>
+        <item>0x2150</item>
+        <item>0x1B170</item>
+        <item>0x1E100</item>
+        <item>0x1680</item>
+        <item>0x1C50</item>
+        <item>0x10C80</item>
+        <item>0x10300</item>
+        <item>0x10A80</item>
+        <item>0x10350</item>
+        <item>0x103A0</item>
+        <item>0x10F00</item>
+        <item>0x10A60</item>
+        <item>0x10C00</item>
+        <item>0x2440</item>
+        <item>0x0B00</item>
+        <item>0x1F650</item>
+        <item>0x104B0</item>
+        <item>0x10480</item>
+        <item>0x1ED00</item>
+        <item>0x16B00</item>
+        <item>0x10860</item>
+        <item>0x11AC0</item>
+        <item>0xA840</item>
+        <item>0x101D0</item>
+        <item>0x10900</item>
+        <item>0x1D00</item>
+        <item>0x1D80</item>
+        <item>0x1F0A0</item>
+        <item>0xE000</item>
+        <item>0x10B80</item>
+        <item>0xA930</item>
+        <item>0x10E60</item>
+        <item>0x16A0</item>
+        <item>0x0800</item>
+        <item>0xA880</item>
+        <item>0x11180</item>
+        <item>0x10450</item>
+        <item>0x1BCA0</item>
+        <item>0x11580</item>
+        <item>0x0D80</item>
+        <item>0x111E0</item>
+        <item>0xFE50</item>
+        <item>0x1B130</item>
+        <item>0x10F30</item>
+        <item>0x110D0</item>
+        <item>0x11A50</item>
+        <item>0x02B0</item>
+        <item>0xFFF0</item>
+        <item>0x1B80</item>
+        <item>0x1CC0</item>
+        <item>0x2070</item>
+        <item>0x27F0</item>
+        <item>0x2900</item>
+        <item>0x1F800</item>
+        <item>0x2A00</item>
+        <item>0x2E00</item>
+        <item>0x1F900</item>
+        <item>0xF0000</item>
+        <item>0x100000</item>
+        <item>0x1D800</item>
+        <item>0xA800</item>
+        <item>0x1FA70</item>
+        <item>0x0700</item>
+        <item>0x0860</item>
+        <item>0x1700</item>
+        <item>0x1760</item>
+        <item>0xE0000</item>
+        <item>0x1950</item>
+        <item>0x1A20</item>
+        <item>0xAA80</item>
+        <item>0x1D300</item>
+        <item>0x11680</item>
+        <item>0x0B80</item>
+        <item>0x11FC0</item>
+        <item>0x17000</item>
+        <item>0x18800</item>
+        <item>0x0C00</item>
+        <item>0x0780</item>
+        <item>0x0E00</item>
+        <item>0x0F00</item>
+        <item>0x2D30</item>
+        <item>0x11480</item>
+        <item>0x1F680</item>
+        <item>0x10380</item>
+        <item>0x1400</item>
+        <item>0x18B0</item>
+        <item>0xA500</item>
+        <item>0xFE00</item>
+        <item>0xE0100</item>
+        <item>0x1CD0</item>
+        <item>0xFE10</item>
+        <item>0x1E2C0</item>
+        <item>0x118A0</item>
+        <item>0xA490</item>
+        <item>0xA000</item>
+        <item>0x4DC0</item>
+        <item>0x11A00</item>
+    </array>
+
+    <array name="blockEnd">
+        <item>0x1E95F</item>
+        <item>0x1013F</item>
+        <item>0x1173F</item>
+        <item>0x1F77F</item>
+        <item>0xFB4F</item>
+        <item>0x1467F</item>
+        <item>0x1D24F</item>
+        <item>0x1018F</item>
+        <item>0x101CF</item>
+        <item>0x06FF</item>
+        <item>0x08FF</item>
+        <item>0x1EEFF</item>
+        <item>0xFDFF</item>
+        <item>0xFEFF</item>
+        <item>0x077F</item>
+        <item>0x058F</item>
+        <item>0x21FF</item>
+        <item>0x10B3F</item>
+        <item>0x1B7F</item>
+        <item>0xA6FF</item>
+        <item>0x16A3F</item>
+        <item>0x007F</item>
+        <item>0x16AFF</item>
+        <item>0x1BFF</item>
+        <item>0x09FF</item>
+        <item>0x11C6F</item>
+        <item>0x259F</item>
+        <item>0x312F</item>
+        <item>0x31BF</item>
+        <item>0x257F</item>
+        <item>0x1107F</item>
+        <item>0x28FF</item>
+        <item>0x1A1F</item>
+        <item>0x175F</item>
+        <item>0x1D0FF</item>
+        <item>0x102DF</item>
+        <item>0x1056F</item>
+        <item>0x1114F</item>
+        <item>0xAA5F</item>
+        <item>0x13FF</item>
+        <item>0xABBF</item>
+        <item>0x1FA6F</item>
+        <item>0x33FF</item>
+        <item>0xFE4F</item>
+        <item>0xFAFF</item>
+        <item>0x2FA1F</item>
+        <item>0x2EFF</item>
+        <item>0x31EF</item>
+        <item>0x303F</item>
+        <item>0x9FFF</item>
+        <item>0x4DBF</item>
+        <item>0x2A6DF</item>
+        <item>0x2B73F</item>
+        <item>0x2B81F</item>
+        <item>0x2CEAF</item>
+        <item>0x2EBEF</item>
+        <item>0x036F</item>
+        <item>0x1AFF</item>
+        <item>0x20FF</item>
+        <item>0x1DFF</item>
+        <item>0xFE2F</item>
+        <item>0xA83F</item>
+        <item>0x243F</item>
+        <item>0x2CFF</item>
+        <item>0x102FF</item>
+        <item>0x1D37F</item>
+        <item>0x123FF</item>
+        <item>0x1247F</item>
+        <item>0x20CF</item>
+        <item>0x1083F</item>
+        <item>0x04FF</item>
+        <item>0x2DFF</item>
+        <item>0xA69F</item>
+        <item>0x1C8F</item>
+        <item>0x052F</item>
+        <item>0x1044F</item>
+        <item>0x097F</item>
+        <item>0xA8FF</item>
+        <item>0x27BF</item>
+        <item>0x1184F</item>
+        <item>0x1F09F</item>
+        <item>0x1BC9F</item>
+        <item>0x1254F</item>
+        <item>0x1343F</item>
+        <item>0x1342F</item>
+        <item>0x1052F</item>
+        <item>0x10FFF</item>
+        <item>0x1F64F</item>
+        <item>0x1F1FF</item>
+        <item>0x24FF</item>
+        <item>0x32FF</item>
+        <item>0x1F2FF</item>
+        <item>0x137F</item>
+        <item>0x2DDF</item>
+        <item>0xAB2F</item>
+        <item>0x139F</item>
+        <item>0x206F</item>
+        <item>0x25FF</item>
+        <item>0x1F7FF</item>
+        <item>0x10FF</item>
+        <item>0x1CBF</item>
+        <item>0x2D2F</item>
+        <item>0x2C5F</item>
+        <item>0x1E02F</item>
+        <item>0x1034F</item>
+        <item>0x1137F</item>
+        <item>0x03FF</item>
+        <item>0x1FFF</item>
+        <item>0x0AFF</item>
+        <item>0x11DAF</item>
+        <item>0x0A7F</item>
+        <item>0xFFEF</item>
+        <item>0x318F</item>
+        <item>0x11FF</item>
+        <item>0xA97F</item>
+        <item>0xD7FF</item>
+        <item>0xD7AF</item>
+        <item>0x10D3F</item>
+        <item>0x173F</item>
+        <item>0x108FF</item>
+        <item>0x05FF</item>
+        <item>0xDBFF</item>
+        <item>0xDB7F</item>
+        <item>0x309F</item>
+        <item>0x2FFF</item>
+        <item>0x16FFF</item>
+        <item>0x1085F</item>
+        <item>0x1ECBF</item>
+        <item>0x10B7F</item>
+        <item>0x10B5F</item>
+        <item>0x02AF</item>
+        <item>0xA9DF</item>
+        <item>0x110CF</item>
+        <item>0x1B12F</item>
+        <item>0x1B0FF</item>
+        <item>0x319F</item>
+        <item>0x2FDF</item>
+        <item>0x0CFF</item>
+        <item>0x30FF</item>
+        <item>0x31FF</item>
+        <item>0xA92F</item>
+        <item>0x10A5F</item>
+        <item>0x17FF</item>
+        <item>0x19FF</item>
+        <item>0x1124F</item>
+        <item>0x112FF</item>
+        <item>0x0EFF</item>
+        <item>0x1EFF</item>
+        <item>0x017F</item>
+        <item>0x024F</item>
+        <item>0x2C7F</item>
+        <item>0xA7FF</item>
+        <item>0xAB6F</item>
+        <item>0x00FF</item>
+        <item>0x1C4F</item>
+        <item>0x214F</item>
+        <item>0x194F</item>
+        <item>0x1077F</item>
+        <item>0x100FF</item>
+        <item>0x1007F</item>
+        <item>0xA4FF</item>
+        <item>0xDFFF</item>
+        <item>0x1029F</item>
+        <item>0x1093F</item>
+        <item>0x1117F</item>
+        <item>0x1F02F</item>
+        <item>0x11EFF</item>
+        <item>0x0D7F</item>
+        <item>0x085F</item>
+        <item>0x10AFF</item>
+        <item>0x11CBF</item>
+        <item>0x11D5F</item>
+        <item>0x1D7FF</item>
+        <item>0x22FF</item>
+        <item>0x1D2FF</item>
+        <item>0x16E9F</item>
+        <item>0xABFF</item>
+        <item>0xAAFF</item>
+        <item>0x1E8DF</item>
+        <item>0x109FF</item>
+        <item>0x1099F</item>
+        <item>0x16F9F</item>
+        <item>0x27EF</item>
+        <item>0x29FF</item>
+        <item>0x26FF</item>
+        <item>0x2BFF</item>
+        <item>0x1F5FF</item>
+        <item>0x23FF</item>
+        <item>0x1165F</item>
+        <item>0xA71F</item>
+        <item>0x18AF</item>
+        <item>0x1167F</item>
+        <item>0x16A6F</item>
+        <item>0x112AF</item>
+        <item>0x1D1FF</item>
+        <item>0x109F</item>
+        <item>0xAA7F</item>
+        <item>0xA9FF</item>
+        <item>0x108AF</item>
+        <item>0x119FF</item>
+        <item>0x19DF</item>
+        <item>0x1147F</item>
+        <item>0x07FF</item>
+        <item>0x218F</item>
+        <item>0x1B2FF</item>
+        <item>0x1E14F</item>
+        <item>0x169F</item>
+        <item>0x1C7F</item>
+        <item>0x10CFF</item>
+        <item>0x1032F</item>
+        <item>0x10A9F</item>
+        <item>0x1037F</item>
+        <item>0x103DF</item>
+        <item>0x10F2F</item>
+        <item>0x10A7F</item>
+        <item>0x10C4F</item>
+        <item>0x245F</item>
+        <item>0x0B7F</item>
+        <item>0x1F67F</item>
+        <item>0x104FF</item>
+        <item>0x104AF</item>
+        <item>0x1ED4F</item>
+        <item>0x16B8F</item>
+        <item>0x1087F</item>
+        <item>0x11AFF</item>
+        <item>0xA87F</item>
+        <item>0x101FF</item>
+        <item>0x1091F</item>
+        <item>0x1D7F</item>
+        <item>0x1DBF</item>
+        <item>0x1F0FF</item>
+        <item>0xF8FF</item>
+        <item>0x10BAF</item>
+        <item>0xA95F</item>
+        <item>0x10E7F</item>
+        <item>0x16FF</item>
+        <item>0x083F</item>
+        <item>0xA8DF</item>
+        <item>0x111DF</item>
+        <item>0x1047F</item>
+        <item>0x1BCAF</item>
+        <item>0x115FF</item>
+        <item>0x0DFF</item>
+        <item>0x111FF</item>
+        <item>0xFE6F</item>
+        <item>0x1B16F</item>
+        <item>0x10F6F</item>
+        <item>0x110FF</item>
+        <item>0x11AAF</item>
+        <item>0x02FF</item>
+        <item>0xFFFF</item>
+        <item>0x1BBF</item>
+        <item>0x1CCF</item>
+        <item>0x209F</item>
+        <item>0x27FF</item>
+        <item>0x297F</item>
+        <item>0x1F8FF</item>
+        <item>0x2AFF</item>
+        <item>0x2E7F</item>
+        <item>0x1F9FF</item>
+        <item>0xFFFFF</item>
+        <item>0x10FFFF</item>
+        <item>0x1DAAF</item>
+        <item>0xA82F</item>
+        <item>0x1FAFF</item>
+        <item>0x074F</item>
+        <item>0x086F</item>
+        <item>0x171F</item>
+        <item>0x177F</item>
+        <item>0xE007F</item>
+        <item>0x197F</item>
+        <item>0x1AAF</item>
+        <item>0xAADF</item>
+        <item>0x1D35F</item>
+        <item>0x116CF</item>
+        <item>0x0BFF</item>
+        <item>0x11FFF</item>
+        <item>0x187FF</item>
+        <item>0x18AFF</item>
+        <item>0x0C7F</item>
+        <item>0x07BF</item>
+        <item>0x0E7F</item>
+        <item>0x0FFF</item>
+        <item>0x2D7F</item>
+        <item>0x114DF</item>
+        <item>0x1F6FF</item>
+        <item>0x1039F</item>
+        <item>0x167F</item>
+        <item>0x18FF</item>
+        <item>0xA63F</item>
+        <item>0xFE0F</item>
+        <item>0xE01EF</item>
+        <item>0x1CFF</item>
+        <item>0xFE1F</item>
+        <item>0x1E2FF</item>
+        <item>0x118FF</item>
+        <item>0xA4CF</item>
+        <item>0xA48F</item>
+        <item>0x4DFF</item>
+        <item>0x11A4F</item>
+    </array>
+</resources>

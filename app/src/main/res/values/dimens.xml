@@ -1,0 +1,29 @@
+<resources xmlns:tools = "http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name = "activity_horizontal_margin">16dp</dimen>
+    <dimen name = "activity_vertical_margin">16dp</dimen>
+    <dimen name = "nav_header_vertical_spacing">8dp</dimen>
+    <dimen name = "nav_header_height">150dp</dimen>
+    <dimen name = "button_height">48dp</dimen>
+
+
+    <!-- Helper settings-->
+    <dimen name = "fab_margin">16dp</dimen>
+    <dimen name = "app_bar_height">0dp</dimen>
+    <dimen name = "item_width">200dp</dimen>
+    <dimen name = "text_margin">16dp</dimen>
+
+
+    <!-- Dialog dimesn -->
+    <dimen name = "header_text_size">@dimen/_15ssp</dimen>
+    <dimen name = "edittext_text_size">@dimen/_11ssp</dimen>
+    <dimen name = "button_text_size">@dimen/_11ssp</dimen>
+    <dimen name = "button_large_text_size">@dimen/_12ssp</dimen>
+    <dimen name = "label_text_size">@dimen/_13ssp</dimen>
+    <dimen name = "list_text_size">@dimen/_12ssp</dimen>
+    <dimen name = "tiny_list_text_size">@dimen/_10ssp</dimen>
+    <dimen name = "message_text_size">@dimen/_12ssp</dimen>
+    <dimen name = "large_message_text_size">@dimen/_14ssp</dimen>
+    <dimen name = "icon_size">@dimen/_16sdp</dimen>
+
+</resources>

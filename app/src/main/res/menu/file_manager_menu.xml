@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto">
+    <item
+            android:id = "@+id/action_more"
+            android:icon = "@drawable/file_manager_vert"
+            android:title = ""
+            app:showAsAction = "always">
+        <menu>
+            <item
+                    android:id = "@+id/hiddenFiles"
+                    android:checkable = "false"
+                    android:enabled = "true"
+                    android:icon = "@drawable/file_manager_check_box"
+                    android:orderInCategory = "1"
+                    android:title = "@string/file_manager_hidden" />
+            <item
+                    android:id = "@+id/inaccessible"
+                    android:checkable = "false"
+                    android:enabled = "true"
+                    android:icon = "@drawable/file_manager_check_box"
+                    android:orderInCategory = "2"
+                    android:title = "@string/file_manager_inaccessible" />
+            <item
+                    android:id = "@+id/sortFolders"
+                    android:checkable = "false"
+                    android:enabled = "true"
+                    android:icon = "@drawable/file_manager_check_box"
+                    android:orderInCategory = "4"
+                    android:title = "@string/file_manager_sort_folders" />
+            <item
+                    android:id = "@+id/sortFiles"
+                    android:checkable = "false"
+                    android:enabled = "true"
+                    android:icon = "@drawable/file_manager_check_box"
+                    android:orderInCategory = "8"
+                    android:title = "@string/file_manager_sort_files" />
+
+            <item
+                    android:id = "@+id/filesFirst"
+                    android:checkable = "false"
+                    android:enabled = "true"
+                    android:icon = "@drawable/file_manager_check_box"
+                    android:orderInCategory = "16"
+                    android:title = "@string/file_manager_files_first" />
+
+            <item
+                    android:id = "@+id/newestFirst"
+                    android:checkable = "false"
+                    android:enabled = "true"
+                    android:icon = "@drawable/file_manager_check_box"
+                    android:orderInCategory = "128"
+                    android:title = "@string/file_manager_sort_date" />
+
+            <item
+                    android:id = "@+id/newFolder"
+                    android:checkable = "false"
+                    android:enabled = "true"
+                    android:icon = "@drawable/file_manager_new_folder"
+                    android:orderInCategory = "-1"
+                    android:title = "@string/file_manager_create_folder" />
+
+            <item
+                    android:id = "@+id/newFile"
+                    android:checkable = "false"
+                    android:enabled = "true"
+                    android:icon = "@drawable/file_manager_new_file"
+                    android:orderInCategory = "-1"
+                    android:title = "@string/file_manager_create_file" />
+
+        </menu>
+
+    </item>
+
+</menu>

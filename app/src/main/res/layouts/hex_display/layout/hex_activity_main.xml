@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:ads = "http://schemas.android.com/apk/res-auto"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+    <!--
+    //###########################
+    //
+    // Banner Ad
+    //
+    //###########################
+    -->
+    <FrameLayout
+            android:id = "@+id/adContainer"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            ads:layout_constraintBottom_toTopOf = "@id/appBar"
+            ads:layout_constraintTop_toTopOf = "parent">
+
+        <com.google.android.gms.ads.AdView
+                android:id = "@+id/hexAdViewDebug"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:visibility = "invisible"
+                ads:adSize = "SMART_BANNER"
+                ads:adUnitId = "ca-app-pub-3940256099942544/6300978111"
+                tools:visibility = "visible" />
+
+        <com.google.android.gms.ads.AdView
+                android:id = "@+id/hexAdView"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:visibility = "invisible"
+                ads:adSize = "SMART_BANNER"
+                ads:adUnitId = "ca-app-pub-7978336361271355/2792155463"
+                tools:visibility = "visible" />
+    </FrameLayout>
+
+    <!--
+    // Testing
+    ads:adUnitId = "ca-app-pub-3940256099942544/6300978111"
+
+    // real
+    ads:adUnitId = "ca-app-pub-7978336361271355/2792155463"
+    -->
+
+    <androidx.appcompat.widget.Toolbar
+            android:id = "@+id/appBar"
+            android:layout_width = "match_parent"
+            android:layout_height = "@dimen/app_bar_height"
+            android:background = "?myToolbar"
+            android:descendantFocusability = "afterDescendants"
+            android:theme = "@style/Theme.AppBarOverlay"
+            ads:layout_constraintTop_toBottomOf = "@id/adContainer"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent" />
+
+    <include
+            layout = "@layout/hex_drawer_layout"
+            android:layout_width = "0dp"
+            android:layout_height = "0dp"
+            android:layout_below = "@id/appBar"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/appBar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

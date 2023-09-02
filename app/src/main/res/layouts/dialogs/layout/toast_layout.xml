@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:background = "?myBasicBox"
+        android:padding = "@dimen/_6sdp">
+
+
+    <ImageView
+            android:id = "@+id/imageToast"
+            android:layout_width = "@dimen/_20sdp"
+            android:layout_height = "@dimen/_20sdp"
+            android:layout_marginStart = "@dimen/_4sdp"
+            android:layout_marginLeft = "@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toStartOf = "@id/textToast"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:srcCompat = "@android:drawable/ic_dialog_alert" />
+
+    <com.GenesysEast.windhex.CustomControls.GradientTextView
+            android:id = "@+id/textToast"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_marginStart = "@dimen/_4sdp"
+            android:layout_marginLeft = "@dimen/_4sdp"
+            android:gravity = "center_vertical"
+            android:padding = "@dimen/_2sdp"
+            android:textColor = "@android:color/white"
+            android:textSize = "@dimen/large_message_text_size"
+            android:textStyle = "bold"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toEndOf = "@id/imageToast"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:strokeColor = "@android:color/black"
+            app:strokeWidth = "@dimen/_1sdp"
+            tools:text = "This is a message" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

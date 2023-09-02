@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset='us-ascii'>  
+        <link rel="stylesheet" type="text/css" href="help_style.css">  
+        <title>
+        </title>		
+
+		<!-- Javascript code to process color data -->
+		<script type = "text/javaScript" src = "help_js.js"></script>
+
+    </head>
+    <body>      
+	
+		<!-- Scroll to Top button -->
+		<button onclick="topFunction()" id="myBtn" >Top</button>
+
+	
+		<div class ="main_header" id= "pageHeader" >    
+			Using WindHex Mobile 
+		</div>			
+		
+		<!-- <div  class="menu_list"> -->
+			<table align="center" border = "0" height = "120">
+				<col width="120">
+				<col width="120">
+
+				<tr >
+					<td align="center">
+						<a href="hex_editor.html">
+							<font color="#ffffff" size="4">Hex Editor
+							</font></a>  
+					</td>	
+					<td align="center">
+						<a href="table_editor.html">
+							<font color="#ffffff" size="4">Table Editor
+							</font></a>  				
+					</td>		
+				</tr>						
+				<tr>
+					<td align="center">
+						<a href="file_browser.html">
+							<font color="#ffffff" size="4">File Browser
+							</font></a>  
+					</td>
+					<td align="center">
+						<a href="settings_menu.html">
+							<font color="#ffffff" size="4">Settings Menu
+							</font></a>  						
+					</td>
+				</tr>        
+			</table>	
+		<!-- </div> -->
+
+        <div class ="text_message">    
+            <div class="sub_topic">WindHex: Home Screen</div>				
+			<br>
+			
+			<dl>
+				<dt><div class="topic_subject">Home Screen Menu Bar</div>
+					<ul>
+						<li>On the menu bar, clicking the "<strong>Arrow (Exit)</strong>" icon on the left side exits <strong>WindHex</strong> and returns to the desktop.
+						<li>The "<strong>Gear (Settings)</strong>" icon on the right side of the menu bar displays the <strong>System Settings</strong> menu.
+						<li>The "<strong>Clock (Recent files)</strong>" icon opens up a recent files list. You can reload a file from here instead
+							of searching for the file within the file browser.
+					</ul>
+					
+				<br>			
+				<dt><div class="topic_subject">Home Screen Buttons</div>
+					<ul>
+						<li>Clicking the "<strong>Open File</strong>" button will display the file broswer. 
+						<li>The "<strong>About WindHex</strong>" button leads to a dialog that displays developer information.
+						<li>The "<strong>Help</strong>" button will give you access to this help section.
+					</ul>
+			</dl>
+		</div>
+		
+		<!--	Change background colors -->
+		<script>
+			getFromAndroid(0);
+			getFromAndroid(1);
+			getFromAndroid(2);
+			getFromAndroid(3);	// Button color			
+			
+			// When a user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};						
+		</script>		
+    </body>
+</html>

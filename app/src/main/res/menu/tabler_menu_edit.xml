@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app = "http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id = "@+id/optOpen"
+            android:title = "@string/table_open_table"/>
+    <item
+            android:id = "@+id/optSave"
+            android:title = "@string/table_save_table"/>
+    <item
+            android:id = "@+id/optSort"
+            android:title = "@string/table_sort_entries"/>
+    <item android:title = "@string/hex_convert_table" android:id = "@+id/optConvert"/>
+    <item
+            android:id = "@+id/optHelp"
+            android:title = "@string/table_help"/>
+</menu>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id = "@+id/action_open_file"
+            android:enabled = "true"
+            android:icon = "@drawable/ic_folder_open"
+            android:orderInCategory = "0"
+            android:title = "@string/menu_home"
+            app:showAsAction = "always" />
+    <item
+            android:id = "@+id/action_save"
+            android:checkable = "false"
+            android:enabled = "true"
+            android:icon = "@drawable/ic_save"
+            android:orderInCategory = "1"
+            android:title = "@string/menu_save"
+            app:showAsAction = "always" />
+    <item
+            android:id = "@+id/action_search"
+            android:enabled = "true"
+            android:icon = "@drawable/hex_search"
+            android:orderInCategory = "2"
+            android:title = "@string/action_find"
+            app:showAsAction = "always" />
+    <item
+            android:id = "@+id/action_replace"
+            android:icon = "@drawable/ic_search_replace"
+            android:orderInCategory = "2"
+            android:title = "@string/action_replace_text"
+            app:showAsAction = "always" />
+    <item
+            android:id = "@+id/undoHexChanges"
+            android:icon = "@drawable/hex_undo"
+            android:orderInCategory = "3"
+            android:title = "@string/action_undo"
+            app:actionLayout = "@layout/hex_undo_button"
+            app:showAsAction = "always" />
+    <item
+            android:id = "@+id/action_settings"
+            android:enabled = "true"
+            android:icon = "@drawable/ic_settings"
+            android:orderInCategory = "4"
+            android:title = "@string/action_settings"
+            android:visible = "true"
+            app:showAsAction = "ifRoom" />
+
+    <item
+            android:id = "@+id/action_save_as"
+            android:checkable = "false"
+            android:enabled = "true"
+            android:orderInCategory = "5"
+            android:title = "@string/menu_save_as"
+            app:showAsAction = "never" />
+
+    <item
+            android:id = "@+id/action_open_table"
+            android:orderInCategory = "6"
+            android:title = "@string/table_open_table"
+            app:showAsAction = "never" />
+
+    <item
+            android:id = "@+id/action_save_table"
+            android:orderInCategory = "7"
+            android:title = "@string/table_save_table"
+            app:showAsAction = "never" />
+
+    <item
+            android:id = "@+id/action_compare"
+            android:orderInCategory = "8"
+            android:title = "@string/action_compare_files"
+            app:showAsAction = "never" />
+
+    <item
+            android:id = "@+id/action_font"
+            android:orderInCategory = "9"
+            android:title = "@string/action_reset_font"
+            app:showAsAction = "never" />
+
+    <item
+            android:id = "@+id/action_table"
+            android:orderInCategory = "10"
+            android:title = "@string/action_table" />
+    <item
+            android:id = "@+id/reset_settings"
+            android:orderInCategory = "11"
+            android:title = "@string/hex_reset_settings"
+            app:showAsAction = "never" />
+    <item
+            android:id = "@+id/action_about"
+            android:enabled = "true"
+            android:orderInCategory = "12"
+            android:title = "@string/action_about"
+            app:showAsAction = "never" />
+    <item
+            android:id = "@+id/action_rominfo"
+            android:orderInCategory = "13"
+            android:title = "@string/action_rominfo_text"
+            app:showAsAction = "never" />
+    <item
+            android:id = "@+id/action_help"
+            android:enabled = "true"
+            android:orderInCategory = "14"
+            android:title = "@string/action_help"
+            app:showAsAction = "never" />
+
+    <item
+            android:id = "@+id/action_ad_remove"
+            android:enabled = "true"
+            android:orderInCategory = "15"
+            android:title = "@string/action_ad_remove"
+            android:visible = "false"
+            app:showAsAction = "never" />
+
+    <item
+            android:id = "@+id/action_exit"
+            android:enabled = "true"
+            android:orderInCategory = "16"
+            android:title = "@string/action_exit"
+            app:showAsAction = "never" />
+</menu>
+

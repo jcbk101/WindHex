@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:ads = "http://schemas.android.com/apk/res-auto"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation="vertical">
+        <WebView
+                android:id = "@+id/helpWebView"
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = ".8"
+                android:fitsSystemWindows = "true"/>
+    
+<!--
+        <com.google.android.gms.ads.AdView
+                android:id = "@+id/webAdView"
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_weight = ".1"
+                ads:adSize = "SMART_BANNER"
+                ads:adUnitId = "ca-app-pub-7978336361271355/2792155463"/>
+-->
+
+        <!--
+            // for testing
+            ads:adUnitId = "ca-app-pub-3940256099942544/6300978111"/>
+            // for release
+            ads:adUnitId = "ca-app-pub-7978336361271355/2792155463"
+         -->
+</LinearLayout>

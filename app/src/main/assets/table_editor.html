@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset='us-ascii'>  
+        <link rel="stylesheet" type="text/css" href="help_style.css">  
+        <title>
+        </title>
+		
+		<!-- Javascript code to process color data -->
+		<script type = "text/javaScript" src = "help_js.js"></script>
+		
+    </head>
+    <body>  
+	
+		<!-- Scroll to Top button -->
+		<button onclick="topFunction()" id="myBtn" >Top</button>
+
+
+        <div class ="main_header" id= "pageHeader" >    
+            WindHex Mobile: Table Editor            
+        </div>
+		
+		<br>
+        <div class="text_message">    
+            <div class="sub_topic">Using the table file editor</div>
+            <br>    
+					Creating a table file is fairly simple. The only requirements are that the table entries (1) use the left to right format and (2) have even numbered hex entries as seen below. 
+					<dl>
+						<dt><div class="topic_subject">Example:</div>
+							<code>
+							<dd>41=A
+							<dd>42=B
+							<dd>0141=&#12354;		
+							<dd>80=an
+							<dd>81=hello
+							<dd>82=my friend
+							<dd>FE=[newl]
+							<dd>FF=[end]
+							<br>
+							<dd><font color = "red">1=A and 234=happy</font> ; Invalid entries.
+							</code>
+					
+						<br>
+						<br>
+						<dt><div class="topic_subject">Main Menu Bar</div>					
+							<ul>
+								<li>On the menu bar, clicking the "<strong>Arrow (Return)</strong>" icon on the left side allows you to return to the hex editor window.
+								<li>The option menu selections are self explanatory.
+							</ul>
+					</dl>
+					
+					<br>
+					Depending on the button used to initiate the table editor, you will have access to certain button functions.
+					One of these being the "<strong>Table Undo</strong>" button on the "<strong>Table Editor's</strong>" menu bar.
+					This feature is very limited as it only works on the "<strong>New File</strong>" initiated process from the
+					<strong>hex window's</strong> menu bar. More support might be added in the future.
+					
+					<br><br>
+					If the table editor is initiated using the "<strong>Edit Table</strong>" button on the hex window's menu bar, then the undo feature 
+					is disabled. Only when using the "<strong>Edit Table File</strong>" function can you load a <strong>shift-jis</strong> file and
+					convert it to UTF format.
+					
+					<br><br>
+					At the lower half of the screen, there is a drop down list that gives you the ability to select a character set from a list
+					of <strong>unicode tables</strong>.	If the "not valid" image <strong>(Circle with a line)</strong> appears, it means the selected unicode
+					table is not supported on the current system.
+					
+        </div>
+		
+		<br>		
+		<a href="main_page.html">
+			<div class="bottom_home">
+				Return to main page
+			</div>		
+		</a>
+		
+		<!--	Change background colors -->
+		<script>
+			getFromAndroid(0);	// Body Background
+			getFromAndroid(1);	// Text message background
+			getFromAndroid(2);	// Sub Topic background
+			getFromAndroid(3);	// Button color
+			
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};			
+		</script>				
+    </body>
+</html>

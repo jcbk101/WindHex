@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "@dimen/_20sdp"
+        android:layout_height = "@dimen/_20sdp"
+        android:contentDescription = "@string/action_undo"
+        tools:layout_height = "match_parent"
+        tools:layout_width = "match_parent">
+
+
+    <ImageView
+            android:id = "@+id/undo_Image"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:background = "@color/fireRed"
+            app:srcCompat = "@drawable/table_undo" />
+
+
+    <TextView
+            android:id = "@+id/undo_badge"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:gravity = "center"
+            android:textColor = "@android:color/white"
+            android:textSize = "@dimen/_8ssp"
+            android:textStyle = "bold"
+            tools:text = "0---100" />
+</FrameLayout>

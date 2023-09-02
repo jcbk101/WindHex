@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset='us-ascii'>  
+        <link rel="stylesheet" type="text/css" href="help_style.css">  
+        <title>
+        </title>
+		
+		<!-- Javascript code to process color data -->
+		<script type = "text/javaScript" src = "help_js.js"></script>
+		
+    </head>
+    <body>  
+	
+		<!-- Scroll to Top button -->
+		<button onclick="topFunction()" id="myBtn" >Top</button>
+	
+        <div class ="main_header" id= "pageHeader" >    
+            WindHex Mobile: Hex Editor            
+        </div>
+
+        <br>    		
+        <div class ="text_message">    
+            <div class="sub_topic">Hex Editing Window</div>
+            <br>    
+			The "<strong>Menu (three horizontal lines)</strong>" icon  displays a list of all the recently loaded files.
+			Selecting a file in that list will open the file in the editor.
+
+			<br>
+			<br>
+			The top toolbar contains action buttons which are listed as follows:
+			<ul>
+				<li>"<strong>Open File</strong>" - Opens a file for editing
+				<li>"<strong>Save File</strong>" - Save a currently opened file
+				<li>"<strong>Search</strong>" - Search a file for Hex, Text, Table file, or Unicode data
+				<li>"<strong>Replace</strong>" - Search a file and replace finds using Hex, Text, or Table file data
+				<li>"<strong>Undo</strong>" - Undo changes in hexadecimal editing
+				<li>"<strong>Settings</strong>" - Change system settings
+				<li>"<strong>More Options</strong>" - display options menu
+			</ul>
+			
+			<br><br>
+			<dt><div class="topic_subject">Options Menu</div>			
+			<ul>
+				<li>"<strong>Default Font size</strong>" allows font size resetting. The hex window can be scaled up or down using the "<strong>Pinch</strong>" method. 
+				<li>If any table file is loaded, it can be cleared by tapping "<strong>Clear Current Table</strong>". 
+				<li>"<strong>Reset Settings</strong>" will reset all system settings to default. 
+				<li>"<strong>About WindHex</strong>" shows developer information.
+				<li>"<strong>File Info</strong>" shows details about the currently opened file.
+				<li>"<strong>Help</strong>" displays this window.
+				<li>The "<strong>Exit</strong>" button will exit <strong>WindHex</strong>.
+			</ul>
+			<br>
+		</div>
+		<br>
+
+        <div class ="text_message">    
+            <div class="sub_topic">Lower Menu Bars and Hexadecimal Keyboard</div>
+            <br>    		
+			On the bottom of the screen, three different menu bars, and a single hexadecimal keyboard can be utilized.
+			
+			<br>
+			<br>
+			The default menu bar allows for a few functions to be performed such as:
+				<dl>
+					<dt><div class="topic_subject">Default Menu Bar</div>
+						<ul>
+							<li>The "<strong>Goto</strong>" button allows a user to jump to a file location.
+							<li>"<strong>Open Table File</strong>" will load a table file into slot #1 or #2.
+							<li>"<strong>New Table File</strong>" will help in the creation of a new table file.
+							<li>"<strong>Edit Current Table File</strong>" allows editing to the currently loaded table, or a new file can be create.
+							<li>"<strong>Swap Table Files</strong>" will enable loading a second table file and also switch between the two files.
+						</ul>	
+
+					<dt><div class="topic_subject">Hex and Text Window: Long press</div>
+							<dd>If you long press on the <strong>hexadecimal</strong> or <strong>text</strong> data areas, a second menu bar will be displayed.
+								Most of these functions are self explanatory. 
+							<dd>Should you long press and "<strong>Drag the pointer</strong>", up, down, left, or right, the displayed
+								<strong>hex and text</strong> data will be highlighted.
+						
+					<br>
+					<br>
+					<dt><div class="topic_subject">Hex Window: Tap or Touch</div>
+							<dd>Should you tap on the hexadecimal area, a hexadecimal keyboard with four directional arrows will be displayed. 
+							The hexadecimal keys will give you the ability to directly input hexadecimal values into the hex display.
+							The arrow keys will move the cursor around the hexadecimal window.
+							
+					<br>
+					<br>
+					<dt><div class="topic_subject">Text Window: Tap or Touch</div>							
+							<dd>Should you tap on the text display, a third menu bar will be displayed. This menu enables direct text editing 
+								using either <strong>ASCII</strong> text or a <strong>Table File</strong> previously loaded.
+								This can be toggled using the "<strong>Edit using Table File</strong>" switch.						
+					
+				</dl>
+		</div>	
+
+		<br>
+        <div class ="text_message">    
+            <div class="sub_topic">Searching and Replacing Data</div>
+            <br>    
+			These features are very basic and perform similarly to a word processor.
+				<dl>
+					<dt><div class="topic_subject">Search</div>							
+						<dd>The searching dialog allows for searches using hexadecimal, table file, ASCII, or unicode input types. 
+						You have the option to list all the search results in a scrollable list, and use that list to jump to any location
+						that was returned as a result.
+				
+					<br>
+					<br>
+					<dt><div class="topic_subject">Search and Replace</div>							
+						<dd>The search and replace dialog <strong><font color = "red">DOES NOT</font></strong> allow Unicode input. 
+							You have the option to list all the replaced results in a scrollable list and use that list to jump to any location
+							that was returned "<strong>replaced</strong>" as a result.
+				
+				</dl>					
+        </div>
+		
+		
+		<br>
+        <div class ="text_message">    
+            <div class="sub_topic">Hexadecimal Undo Feature</div>
+            <br>    
+				You will have a maximum of <strong>300</strong> undo-able hex editing actions that can be performed on the file's data.
+		</div>
+
+
+		<br>
+        <div class ="text_message">    
+            <div class="sub_topic">Navigating Hexadecimal Window</div>
+            <br>    
+			This section covers the scrolling functions for the hex window display.
+
+				<dl>
+					<dt><div class="topic_subject">Scrolling by Pointer</div>										
+					<ul>
+						<li>To move the hex window line-by-line, simply drag the pointer up or down slowly. 
+						<li>Flinging the pointer up or down allows for browsing the file by larger data blocks or pages.
+					</ul>
+					<br>
+					<br>
+					<dt><div class="topic_subject">Scrollbar Thumb</div>										
+						<dd>On the bottom of the screen, there is a <strong>scrollbar</strong> that can be used to navigate the file
+							in larger steps or pages. If there is no visible thumb, it means the data just about fits in one window.
+				</dl>
+		</div>
+
+		<br>
+        <div class ="text_message">    
+            <div class="sub_topic">File Comparisons</div>
+            <br>    
+			This section will cover the file compare function. Basic functionality is supported for now in order to maintain speed
+			and effciency.
+
+				<dl>
+					<dt><div class="topic_subject">Comparing two files</div>										
+					<ul>
+						<li>Clicking the "<strong>Compare two files</strong>" menu selection on the main hex editing screen will open
+						the file browsing window. Once a file is selected, it will be compared against the currently opened file. The
+						top hex display is the current file, and the bottom dislay is the comparing file. Hex differences will be
+						highlighted in <strong><font color = "red">RED</font></strong> and <strong>YELLOW</strong>.
+						<li>Clicking the two arrows will scroll the data either back one page or forward one page.
+						<li>The scrollbar in the center will scroll through pages for faster viewing.
+					</ul>
+				</dl>
+		</div>
+
+		<br>
+		<a href="main_page.html">
+			<div class="bottom_home">			
+				Return to main page
+			</div>
+		</a>
+			
+		<!--	Change background colors -->
+		<script>
+			getFromAndroid(0);	// Body Background
+			getFromAndroid(1);	// Text message background
+			getFromAndroid(2);	// Sub Topic background
+			getFromAndroid(3);	// Button color
+			
+			// When a user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};			
+		</script>		`
+    </body>	
+</html>

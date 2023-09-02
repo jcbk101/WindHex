@@ -1,0 +1,264 @@
+<resources>
+
+    <!--
+    //############################################
+    //
+    // DrawHex strings
+    //
+    //############################################
+    -->
+    <string name = "app_name">WindHex</string>
+    <string name = "navigation_drawer_open">Open navigation drawer</string>
+    <string name = "navigation_drawer_close">Close navigation drawer</string>
+    <string name = "nav_header_desc">Navigation header</string>
+
+    <string name = "action_settings">Settings</string>
+    <string name = "action_help">Help</string>
+    <string name = "action_ad_remove">Remove banner Ad</string>
+    <string name = "action_about">About WindHex</string>
+    <string name = "action_exit">Exit</string>
+    <string name = "action_find">Search</string>
+    <string name = "action_find_again">Search Again</string>
+    <string name = "action_undo">Undo Changes</string>
+    <string name = "action_reset_font">Default font size</string>
+    <string name = "action_table">Clear current table</string>
+    <string name = "hex_reset_settings">Reset settings</string>
+    <string name = "replace_edit_text">Replace Text</string>
+    <string name = "action_replace_text">Replace</string>
+    <string name = "action_replace_text_again">Replace Next</string>
+    <string name = "action_rominfo_text">File info</string>
+    <string name = "action_compare_files">Compare two files</string>
+
+    <string name = "menu_home">Open File</string>
+    <string name = "menu_table">Open Table File</string>
+    <string name = "menu_save">Save File</string>
+    <string name = "menu_save_as">Save File As…</string>
+
+    <string name = "hexViewDesc">Hex display</string>
+    <string name = "title_activity_settings">Settings</string>
+
+    <string name = "date_text">"Last Modified: "</string>
+    <string name = "theme_text">Themes</string>
+    <string name = "general_text">General Settings</string>
+    <string name = "company_name_main">Genesys East LLC</string>
+    <string name = "company_work_type">Software Design</string>
+    <string name = "nav_header_text">Recent Files List</string>
+    <string name = "open_file">Open File</string>
+    <string name = "content_icon">Image icon</string>
+
+    <string name = "text_insert_warning">
+        Warning! Text insertion uses table file entries. If the character does not
+        exist, it will be skipped over. If no matches are found, the default
+        ASCII table will be used.
+    </string>
+
+    <string name = "hex_table_manager">Tables...</string>
+
+    <string name = "goto_text">Goto Offset</string>
+    <string name = "hex_open_table">Open Table</string>
+    <string name = "hex_new_table">New Table</string>
+    <string name = "hex_edit_table">Edit Table</string>
+
+    <string name = "copy_text">Copy</string>
+    <string name = "paste_text">Paste</string>
+    <string name = "edit_text">Edit</string>
+
+    <string name = "save_text">Save</string>
+    <string name = "save_hint">Enter a filename</string>
+    <string name = "hex_paste_data">Paste Data</string>
+    <string name = "hex_edit_text">Edit Text</string>
+    <string name = "hex_paste_text">Paste Text</string>
+    <string name = "hex_select_data">Select</string>
+    <string name = "hex_table_swap">Swap Table</string>
+    <string name = "hex_convert_table">Convert table: Shift-Jis to UTF</string>
+
+    <string name = "search_results">Search results: %1$d</string>
+    <string name = "replace_results">Replaced %1$d entries</string>
+    <string name = "flood_fill_text">Byte Fill</string>
+    <string name = "bookmark_text">Bookmark</string>
+    <string name = "bookmark_hint">Enter a name for your Bookmark</string>
+    <string name = "hex_copy_data">Copy Data</string>
+
+
+    <!--
+    //############################################
+    //
+    //         Home screen strings
+    //
+    //############################################
+    -->
+    <string name = "company_info">Android Hex and Table file editor</string>
+    <!--    <string name = "ver_info">Current Version: 06.28.19</string>-->
+    <string name = "about_appname">WindHex Mobile</string>
+    <string name = "home_str_help">Help</string>
+    <string name = "message_for_users">Thank you for supporting my work. I hope that this editor has been helpful to you. I truly appreciate you continuing to use WindHex Mobile.
+                                       I have listened to you all and have tried to add / fix as much as I could. With that said, I truly hope I have done enough for you all.
+                                       "\n\n"
+                                       "One other thing. I released a small game, and I wanted to share it with you. I think it's a nice way to spend a free second if you have it to spare."
+                                        Click the controller icon in the corner and give \"Coin Connection\" a try if you can. Thank you!
+    </string>
+
+    <string name = "banner_message_for_users">
+        "You can create more screen space by disabling the banner Ad. Click \"Options(3 dots)->Remove banner Ad\" for more info"
+    </string>
+
+    <string name = "about_home">About WindHex</string>
+    <string name = "home_open_file">Open File</string>
+    <string name = "home_settings">Settings</string>
+    <string name = "home_recent_files">Recent files</string>
+
+
+    <!--
+    //############################################
+    //
+    // Table manager
+    //
+    //############################################
+    -->
+    <string name = "table_input_hint">41=A; 01FF=\u3441</string>
+    <string name = "table_backspace">Backspace</string>
+    <string name = "table_enter">Done</string>
+    <string name = "table_edit">Edit</string>
+    <string name = "table_delete">Delete</string>
+    <string name = "table_undo">Undo</string>
+
+    <string name = "table_open_table">Open Table File</string>
+    <string name = "table_save_table">Save Table File</string>
+    <string name = "table_sort_entries">Sort Table Entries</string>
+    <string name = "clear_table">Clear Current Table</string>
+    <string name = "table_create_default">Create ASCII Table</string>
+    <string name = "table_help">Help</string>
+
+
+    <!--
+    //############################################
+    //
+    // File manager
+    //
+    //############################################
+    -->
+    <string name = "no_files_displayed">No access to your files structure</string>
+    <string name = "no_files_found">No files found</string>
+    <string name = "file_manager_dir_info">Files: %1$d, Directories: %2$d</string>
+    <string name = "file_manager_file_info">File size: %1$s</string>
+    <string name = "file_manager_hidden">Show Hidden Files</string>
+    <string name = "file_manager_inaccessible">Show Inaccessible Files</string>
+    <string name = "file_manager_sort_folders">Sort All Folders</string>
+    <string name = "file_manager_sort_files">Sort All Files</string>
+    <string name = "file_manager_sort_date">Sort Newest First</string>
+    <string name = "file_manager_files_first">Show Files First</string>
+    <string name = "file_manager_create_file">Create New File</string>
+    <string name = "file_manager_create_folder">Create New Folder</string>
+
+
+    <string name = "no_files">No Files</string>
+    <string name = "no_table_files">No \"*.TBL\" Files</string>
+
+    <string name = "create_file_directory">create</string>
+    <string name = "delete_button_text">delete</string>
+
+    <string name = "enter_filename">Enter a filename</string>
+    <string name = "enter_directory">Enter a directory name</string>
+    <string name = "delete_filename">Delete this file?</string>
+
+
+    <!--
+    //############################################
+    //
+    // File Compare
+    //
+    //############################################
+    -->
+    <string name = "compare_next">Next</string>
+    <string name = "compare_back">Back</string>
+
+
+    <!--
+    //############################################
+    //
+    // All Dialogs
+    //
+    //############################################
+    -->
+    <string name = "rate_app_text">Rate WindHex</string>
+    <string name = "remind_text">Remind Me</string>
+    <string name = "rate_okay">Okay</string>
+    <string name = "no_thanks">No Thanks</string>
+    <string name = "rate_me_plea">
+        If you find WINDHEX useful, please take a moment to rate it.
+        Thank you for your support!
+    </string>
+
+    <string name = "jump_input_hint">File offset</string>
+    <string name = "jump_title">Enter File Offset</string>
+    <string name = "jump_radio_deci">Decimal</string>
+    <string name = "jump_radio_hexi">Hexadecimal</string>
+    <string name = "jump_done">Done</string>
+    <string name = "jump_cancel">Cancel</string>
+    <string name = "jump_offset">%1$s</string>
+
+    <string name = "select_data_start">Starting Offset</string>
+    <string name = "select_data_end">Ending Offset</string>
+    <string name = "select_data_filler">Fill</string>
+    <string name = "select_fill_byte">Fill Byte</string>
+    <string name = "search_radio_hex">Hex</string>
+    <string name = "search_radio_text">Table</string>
+    <string name = "search_radio_ascii">Ascii</string>
+    <string name = "search_radio_table">Unicode</string>
+    <string name = "search_edit_text">Search text</string>
+    <string name = "search_edit_title">Enter search text</string>
+    <string name = "replace_edit_title">Enter search and replace text</string>
+
+
+    <string name = "search_beginning">Search from beginning</string>
+    <string name = "replace_all">Replace all finds</string>
+    <string name = "search_list_results">List search results</string>
+    <string name = "search_limit_list">Max 128 search results</string>
+    <string name = "search_loading">Searching&#8230;</string>
+    <string name = "clipboard_header">Clipboard data</string>
+    <string name = "edit_header">Enter text to insert</string>
+    <string name = "edit_hint">Input text</string>
+
+    <string name = "dialog_close_button_desc">Closes dialog window</string>
+
+    <string name = "replace_notice">
+        <![CDATA[
+            <font color = "yellow"><strong>Notice:</strong></font> The replacement
+            data cannot be longer than the original search data.
+        ]]>
+    </string>
+
+    <string name = "edit_warning">
+        <![CDATA[
+            <font color = "yellow"><strong>Notice:</strong></font> By enabling table file text inserting, the process can affect performance.
+            If text entered does not exist within a given table file, it will not be inserted
+            into the edited file. Leaving this option unchecked will insert the actual value of the
+            text being inserted.
+        ]]>
+    </string>
+    <string name = "edit_use_table">Edit using table file</string>
+    <string name = "edit_button_insert">Insert</string>
+    <string name = "edit_button_cancel">Cancel</string>
+
+    <!-- Select Dialog -->
+    <string name = "select_data_header">Data Selector</string>
+
+
+    <!-- Rom Info Dialog -->
+    <string name = "close_rom_info">Done</string>
+    <string name = "rom_info_title">File Information</string>
+    <string name = "rom_filename_text">
+        <![CDATA[<font color = "yellow"><strong>File name: </strong></font>]]>
+    </string>
+    <string name = "rom_date_text">
+        <![CDATA[<font color = "yellow"><strong>Last modified: </strong></font>]]>
+    </string>
+    <string name = "rom_size_text">
+        <![CDATA[<font color = "yellow"><strong>File size: </strong></font>]]>
+    </string>
+
+    <string name = "privacy_link_text">
+        <a href = "https://sites.google.com/view/genesyseast-privacy-policy/home">Privacy Policy</a>
+    </string>
+
+</resources>

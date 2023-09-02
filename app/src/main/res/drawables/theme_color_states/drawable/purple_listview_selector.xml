@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android = "http://schemas.android.com/apk/res/android">
+    
+    <!-- Pressed key color -->
+    <item android:state_pressed = "true">
+        <shape android:shape = "rectangle">
+            <corners android:radius = "@dimen/_1sdp"/>
+            <solid android:color = "@color/purpleAccent"/>
+        </shape>
+    </item>
+    
+    <!-- Cursor on item color -->
+    <item android:state_selected="true">
+        <shape android:shape = "rectangle">
+            <corners android:radius = "@dimen/_1sdp"/>
+<!--            <solid android:color = "?attr/colorButtonNormal"/>-->
+            <solid android:color = "@android:color/darker_gray"/>
+        </shape>
+    </item>
+    
+    <!-- Default color -->
+    <item>
+        <shape android:shape = "rectangle">
+            <corners android:radius = "@dimen/_1sdp"/>
+            <solid android:color = "@android:color/white"/>
+        </shape>
+    </item>
+    
+</selector>

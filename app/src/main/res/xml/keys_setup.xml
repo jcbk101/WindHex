@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:keyWidth = "9%p"
+        android:keyHeight = "49%p"
+        android:horizontalGap = "1%p"
+        android:verticalGap = "1%p">
+
+    <Row>
+        <Key android:keyEdgeFlags = "left"
+             android:codes = "0" android:keyLabel = "0" android:isRepeatable = "true"/>
+        <Key android:codes = "1" android:keyLabel = "1" android:isRepeatable = "true"/>
+        <Key android:codes = "2" android:keyLabel = "2" android:isRepeatable = "true"/>
+        <Key android:codes = "3" android:keyLabel = "3" android:isRepeatable = "true"/>
+        <Key android:codes = "4" android:keyLabel = "4" android:isRepeatable = "true"/>
+        <Key android:codes = "5" android:keyLabel = "5" android:isRepeatable = "true"/>
+        <Key android:codes = "6" android:keyLabel = "6" android:isRepeatable = "true"/>
+        <Key android:codes = "7" android:keyLabel = "7" android:isRepeatable = "true"/>
+
+<!--
+        <Key android:codes = "16" android:keyLabel="\u2191"
+             android:isRepeatable = "true"/>
+        <Key android:codes = "18" android:keyLabel="\u2190"
+             android:isRepeatable = "true"
+             android:keyEdgeFlags = "right"/>
+-->
+
+        <Key android:codes = "16" android:keyIcon = "@drawable/arrow_up"
+             android:isRepeatable = "true"/>
+        <Key android:codes = "18" android:keyIcon = "@drawable/arrow_left"
+             android:isRepeatable = "true"
+             android:keyEdgeFlags = "right"/>
+
+    </Row>
+    <Row>
+        <Key android:keyEdgeFlags = "left"
+             android:codes = "8" android:keyLabel = "8" android:isRepeatable = "true"/>
+        <Key android:codes = "9" android:keyLabel = "9" android:isRepeatable = "true"/>
+        <Key android:codes = "10" android:keyLabel = "A" android:isRepeatable = "true"/>
+        <Key android:codes = "11" android:keyLabel = "B" android:isRepeatable = "true"/>
+        <Key android:codes = "12" android:keyLabel = "C" android:isRepeatable = "true"/>
+        <Key android:codes = "13" android:keyLabel = "D" android:isRepeatable = "true"/>
+        <Key android:codes = "14" android:keyLabel = "E" android:isRepeatable = "true"/>
+        <Key android:codes = "15" android:keyLabel = "F" android:isRepeatable = "true"/>
+
+<!--
+        <Key android:codes = "17" android:keyLabel="\u2193"
+             android:isRepeatable = "true"/>
+        <Key android:codes = "19" android:keyLabel="\u2192"
+             android:isRepeatable = "true"
+             android:keyEdgeFlags = "right"/>
+-->
+
+        <Key android:codes = "17" android:keyIcon = "@drawable/arrow_down"
+             android:isRepeatable = "true"/>
+        <Key android:codes = "19" android:keyIcon = "@drawable/arrow_right"
+             android:isRepeatable = "true"
+             android:keyEdgeFlags = "right"/>
+
+    </Row>
+</Keyboard>

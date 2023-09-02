@@ -1,0 +1,174 @@
+	/*
+	;------------------------------;
+	;	John Charles               ;
+	;	Company: Genesys East, LLC ;
+	;	Help_styles.css            ;
+	; August 27th, 2019            ;
+	-------------------------------;
+*/
+
+/*Formatting applied to BODY */
+body
+{
+	background: #000000;
+}
+ 
+code
+{
+	font-style : normal;	
+}
+ /* 
+	Settings for the main heading for
+	each page accessed
+*/
+.main_header 
+{
+	font-size: 20px; 
+	text-align: center;
+	background: black;
+	border: solid 2px #ffffff; 
+	border-radius: 4px;
+		
+	color: #ffffff;
+	
+	margin-left : 10px;
+	margin-right : 30px;
+	margin-top : 10px; 
+	padding : 5px; 	
+}
+
+
+/* 
+	Settings for the top heading within
+	the message text
+*/
+.sub_topic 
+{
+	font-size: 18px; 
+	text-align: center;
+	font-weight: bold;
+	font-style : normal;
+	color: #FFFFFF;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+
+/* 
+	Settings for the top heading within
+	the message text
+*/
+.topic_subject
+{
+	font-size: 16px; 
+	text-align: left;
+	font-weight: bold;
+	font-style : normal;
+	color: #FFFFFF;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+/* 
+	Settings for the main message text
+	that details the info topic.
+*/
+.text_message
+{	
+	font-size: 14px; 
+	border: solid 2px #ffffff; 
+	border-radius: 4px;
+	text-align: justify;
+	font-style : italic;
+	
+	color: #ffffff;
+	background: black;	
+	
+	margin-left:10px;
+	margin-right:30px;
+	margin-top: 5px;
+	padding: 10px;
+}
+
+/*
+	Settings for the Return Hom text
+	and box at bottom of each page
+*/
+.bottom_home
+{	
+	font-size: 12px; 
+	color : yellow;
+	border: solid 2px #ffffff; 
+	border-radius: 4px;
+	text-align: center;
+	
+	background: black;	
+	
+	margin-left:10px;
+	margin-right:30px;
+	margin-top: 5px;
+}
+
+
+/* 
+	everything below current not used: Was for menu 
+	selection on main page
+*/
+.menu_list
+{
+	width : 50%;
+	margin: 0 auto;
+	
+	background: black;
+	border: solid 1px #ffffff; 
+	border-radius: 4px;
+	
+	margin-top: 5px;	
+	padding: 5px; 
+}
+
+.topic_left
+{
+	margin-left : 50px;
+	float : left;
+	color : #FFFFFF
+}
+
+.topic_right
+{
+	margin-right : 50px;
+	float : right;
+	color : #FFFFFF
+}
+
+.topic_center
+{
+	text-align: center;
+	color : #FFFFFF
+}
+
+
+strong 
+{
+	color : Yellow;
+}
+
+
+#myBtn 
+{
+	display: none;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+
+	/*z-index: 99;*/
+
+	font-size: 12px;
+	border: none;
+	outline: none;
+	background-color: Blue;
+	color: white;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 4px;
+}

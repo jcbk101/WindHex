@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:ads = "http://schemas.android.com/apk/res-auto"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+    
+    <androidx.appcompat.widget.Toolbar
+            android:id = "@+id/settingsBar"
+            android:layout_width = "match_parent"
+            android:layout_height = "@dimen/app_bar_height"
+            android:background = "?myToolbar"
+            ads:layout_constraintTop_toTopOf="parent"
+            android:theme = "@style/Theme.AppBarOverlay"/>
+
+        <ListView
+                android:id = "@+id/listView"
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:padding="@dimen/_2sdp"
+                android:dividerHeight="@dimen/_2sdp"
+                android:layout_margin="@dimen/_2sdp"
+                ads:layout_constraintTop_toBottomOf="@id/settingsBar"
+                ads:layout_constraintBottom_toBottomOf="parent"
+                android:background = "?colorPrimaryDark"
+                android:scrollbars = "vertical"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

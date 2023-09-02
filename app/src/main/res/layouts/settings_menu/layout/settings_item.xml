@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:id = "@+id/parent_layout"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@android:color/white">
+
+
+    <TextView
+            android:id = "@+id/mainText"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:paddingStart = "@dimen/_2sdp"
+            android:paddingEnd = "@dimen/_2sdp"
+            android:textColor = "@android:color/black"
+            android:textSize = "@dimen/_13ssp"
+            android:textStyle = "bold"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            tools:text = "Barf 1" />
+
+    <TextView
+            android:id = "@+id/subText"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:paddingStart = "@dimen/_2sdp"
+            android:paddingEnd = "@dimen/_2sdp"
+            android:textColor = "@android:color/black"
+            android:textSize = "@dimen/_11ssp"
+            android:textStyle = "italic"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@id/mainText"
+            tools:text = "Barf 2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

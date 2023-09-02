@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:id = "@+id/parent_layout"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical">
+
+    <com.GenesysEast.windhex.CustomControls.GradientTextView
+            android:id = "@+id/headerText"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:background = "?myToolbar"
+            android:gravity = "center"
+            android:textColor = "@android:color/white"
+            android:textSize = "@dimen/_20ssp"
+            android:textStyle = "bold"
+            app:colorList = "?myColorList"
+            app:gradient = "on"
+            app:strokeColor = "@android:color/black"
+            app:strokeWidth = "@dimen/_2sdp"
+            tools:text = "TextView" />
+</RelativeLayout>

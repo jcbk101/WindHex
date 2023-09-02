@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:animateLayoutChanges = "true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width = "@dimen/_220sdp"
+            android:layout_height = "wrap_content"
+            android:background = "?myDialogBox"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = ".4">
+
+        <!--
+        //##########################
+        //
+        // Header
+        //
+        //##########################
+        -->
+        <FrameLayout
+                android:id = "@+id/replaceHeaderLayout"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:background = "?colorPrimaryDark"
+                app:layout_constraintBottom_toTopOf = "@id/dividerReplace"
+                app:layout_constraintEnd_toStartOf = "@id/cancelReplace"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent">
+
+            <com.GenesysEast.windhex.CustomControls.GradientTextView
+                    android:id = "@+id/searchTitle"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity = "center"
+                    android:text = "@string/replace_edit_title"
+                    android:textColor = "@android:color/white"
+                    android:textSize = "@dimen/header_text_size"
+                    android:textStyle = "bold"
+                    app:colorList = "?myColorList"
+                    app:gradient = "on"
+                    app:strokeColor = "@android:color/black"
+                    app:strokeWidth = "@dimen/_2ssp" />
+        </FrameLayout>
+
+        <ImageView
+                android:id = "@+id/cancelReplace"
+                android:layout_width = "@dimen/icon_size"
+                android:layout_height = "@dimen/icon_size"
+                android:background = "?android:itemBackground"
+                android:contentDescription = "@string/dialog_close_button_desc"
+                app:layout_constraintBottom_toTopOf = "@id/dividerReplace"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:srcCompat = "@drawable/close_x" />
+
+
+        <View
+                android:id = "@+id/dividerReplace"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintBottom_toTopOf = "@id/findLayout"
+                app:layout_constraintTop_toBottomOf = "@id/replaceHeaderLayout" />
+
+
+        <!--
+        //############################
+        //
+        // Search / Replace strings
+        //
+        //############################
+        -->
+        <LinearLayout
+                android:id = "@+id/findLayout"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginEnd = "@dimen/_2sdp"
+                android:layout_marginRight = "@dimen/_2sdp"
+                android:background = "?myBasicBox"
+                android:orientation = "vertical"
+                android:padding="@dimen/_2sdp"
+                app:layout_constraintEnd_toStartOf = "@id/replaceButton"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/dividerReplace">
+
+            <EditText
+                    android:id = "@+id/searchText"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "@android:color/white"
+                    android:ems = "10"
+                    android:hint = "@string/search_edit_text"
+                    android:imeOptions = "flagNoFullscreen"
+                    android:inputType = "textVisiblePassword|textNoSuggestions"
+                    android:padding = "@dimen/_1sdp"
+                    android:textColor = "@android:color/black"
+                    android:textColorHint = "@android:color/darker_gray"
+                    android:textSize = "@dimen/edittext_text_size"
+                    tools:text = "01345FED" />
+
+            <EditText
+                    android:id = "@+id/replaceText"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "@android:color/white"
+                    android:ems = "10"
+                    android:hint = "@string/replace_edit_text"
+                    android:imeOptions = "flagNoFullscreen"
+                    android:inputType = "textVisiblePassword|textNoSuggestions"
+                    android:padding = "@dimen/_1sdp"
+                    android:textColor = "@android:color/black"
+                    android:textColorHint = "@android:color/darker_gray"
+                    android:textSize = "@dimen/edittext_text_size"
+                    tools:text = "FED01345" />
+        </LinearLayout>
+
+        <!--
+        //#############################
+        //
+        // Button
+        //
+        //#############################
+        -->
+        <ImageView
+                android:id = "@+id/replaceButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "0dp"
+                android:layout_margin = "@dimen/_2sdp"
+                android:background = "?android:itemBackground"
+                android:contentDescription = "@null"
+                android:scaleType = "fitCenter"
+                android:text = "@string/action_replace_text"
+                app:layout_constraintBottom_toBottomOf = "@id/findLayout"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/dividerReplace"
+                app:srcCompat = "@drawable/ic_replace" />
+
+        <!--
+        //#######################
+        //
+        // Input Types
+        //
+        //#######################
+        -->
+        <FrameLayout
+                android:id = "@+id/sprinnerLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:padding = "@dimen/_2sdp"
+                android:background="@drawable/border_box"
+                app:layout_constraintTop_toBottomOf = "@id/findLayout">
+
+            <Spinner
+                    android:id = "@+id/replaceSpinner"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:spinnerMode = "dropdown"
+                    android:theme = "@style/Spinner.Stylistic"
+                    tools:listitem = "@layout/tabler_spinner_item" />
+        </FrameLayout>
+
+        <!--
+        //########################
+        //
+        // Check boxes
+        //
+        //########################
+        -->
+        <LinearLayout
+                android:id = "@+id/replaceCheckboxesLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:background = "?myContainer"
+                android:orientation = "vertical"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:padding = "@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf = "@id/sprinnerLayout">
+
+            <CheckBox
+                    android:id = "@+id/replaceAll"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:button = "@drawable/check_box_states"
+                    android:tag = "128"
+                    android:text = "@string/replace_all"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size" />
+
+            <CheckBox
+                    android:id = "@+id/replaceFromStart"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:button = "@drawable/check_box_states"
+                    android:tag = "256"
+                    android:text = "@string/search_beginning"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size" />
+
+            <CheckBox
+                    android:id = "@+id/maxReplaceList"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:button = "@drawable/check_box_states"
+                    android:tag = "512"
+                    android:text = "@string/search_limit_list"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size" />
+        </LinearLayout>
+
+        <!--
+        //##########################
+        //
+        // Warning Text
+        //
+        //##########################
+        -->
+        <TextView
+                android:id = "@+id/replaceNotice"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?myBasicBox"
+                android:padding = "@dimen/_2sdp"
+                android:textSize = "@dimen/message_text_size"
+                android:textStyle = "italic|bold"
+                android:textColor="?android:textColorPrimary"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/replaceCheckboxesLayout"
+                tools:text = "@string/replace_notice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/bizName"
+            android:layout_width = "@dimen/_280sdp"
+            android:layout_height = "wrap_content"
+            android:background = "?myDialogBox"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
+
+        <!--
+        //##########################
+        //
+        // Header
+        //
+        //##########################
+        -->
+        <FrameLayout
+                android:id = "@+id/rateHeaderLayout"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:background = "?colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintEnd_toStartOf = "@id/rateCancel"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent">
+
+            <com.GenesysEast.windhex.CustomControls.GradientTextView
+                    android:id = "@+id/reateHeader"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity = "center"
+                    android:text = "@string/rate_app_text"
+                    android:textColor = "@android:color/white"
+                    android:textSize = "@dimen/header_text_size"
+                    android:textStyle = "bold"
+                    app:colorList = "?myColorList"
+                    app:gradient = "on"
+                    app:strokeColor = "@android:color/black"
+                    app:strokeWidth = "@dimen/_2ssp" />
+        </FrameLayout>
+
+        <ImageView
+                android:id = "@+id/rateCancel"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:background = "?android:itemBackground"
+                android:contentDescription = "@string/dialog_close_button_desc"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:layout_constraintBottom_toTopOf="@id/dividerRater"
+                app:srcCompat = "@drawable/close_x" />
+
+        <View
+                android:id = "@+id/dividerRater"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintBottom_toTopOf = "@id/rateMessage"
+                app:layout_constraintTop_toBottomOf = "@id/rateHeaderLayout" />
+
+
+        <!--
+        //###############################
+        //
+        // Rate message
+        //
+        //###############################
+        -->
+        <TextView
+                android:id = "@+id/rateMessage"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:gravity = "center"
+                android:text = "@string/rate_me_plea"
+                android:textColor = "?attr/menuTextColor"
+                android:textSize = "@dimen/message_text_size"
+                app:layout_constraintTop_toBottomOf = "@id/dividerRater" />
+
+
+        <!--
+        //##########################
+        //
+        // Rating buttons
+        //
+        //##########################
+        -->
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/noThanks"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center_horizontal"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:padding = "@dimen/_4ssp"
+                android:text = "@string/no_thanks"
+                android:textAllCaps = "false"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/button_large_text_size"
+                android:textStyle = "bold"
+                app:colorList = "@array/red_reflection"
+                app:gradient = "on"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toStartOf = "@id/remindLater"
+                app:layout_constraintStart_toStartOf = "@id/rateMessage"
+                app:layout_constraintTop_toBottomOf = "@id/rateMessage"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_1sdp" />
+
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/remindLater"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center_horizontal"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:padding = "@dimen/_4ssp"
+                android:text = "@string/remind_text"
+                android:textAllCaps = "false"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/button_large_text_size"
+                android:textStyle = "bold"
+                app:colorList = "@array/blue_reflection"
+                app:gradient = "on"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toStartOf = "@id/retaApp"
+                app:layout_constraintStart_toEndOf = "@id/noThanks"
+                app:layout_constraintTop_toBottomOf = "@id/rateMessage"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_1sdp" />
+
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/retaApp"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center_horizontal"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:padding = "@dimen/_4ssp"
+                android:text = "@string/rate_app_text"
+                android:textAllCaps = "false"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/button_large_text_size"
+                android:textStyle = "bold"
+                app:colorList = "@array/gold_reflection"
+                app:gradient = "on"
+                app:gradientOrientation = "vertical"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "@id/rateMessage"
+                app:layout_constraintStart_toEndOf = "@id/remindLater"
+                app:layout_constraintTop_toBottomOf = "@id/rateMessage"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_1sdp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

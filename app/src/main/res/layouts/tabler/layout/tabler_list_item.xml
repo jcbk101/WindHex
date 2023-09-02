@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:id = "@+id/tableListLayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background = "?myListSelector">
+
+    <!--
+    //########################
+    //
+    // Main Text
+    //
+    //########################
+    -->
+    <TextView
+            android:id = "@+id/tableListItem"
+            android:layout_width = "0dp"
+            android:layout_height = "0dp"
+            android:gravity = "center_vertical"
+            android:textColor = "@android:color/black"
+            android:textSize = "@dimen/message_text_size"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toStartOf = "@id/editButton"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            tools:text = "Simple Item" />
+
+
+    <!--
+    //########################
+    //
+    // Buttons
+    //
+    //########################
+    -->
+    <TextView
+            android:id = "@+id/editButton"
+            android:layout_width = "wrap_content"
+            android:layout_height = "match_parent"
+            android:background = "#FF007F00"
+            android:gravity = "center"
+            android:paddingStart = "@dimen/_4sdp"
+            android:paddingLeft = "@dimen/_4sdp"
+            android:paddingEnd = "@dimen/_4sdp"
+            android:paddingRight = "@dimen/_4sdp"
+            android:text = "@string/table_edit"
+            android:textColor = "@android:color/white"
+            android:textSize = "@dimen/label_text_size"
+            app:drawableTopCompat = "@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toStartOf = "@id/eraseButton"
+            app:layout_constraintStart_toEndOf = "@id/tableListItem"
+            app:layout_constraintTop_toTopOf = "parent" />
+
+
+    <TextView
+            android:id = "@+id/eraseButton"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:background = "#FF7F0000"
+            android:gravity = "center"
+            android:text = "@string/table_delete"
+            android:textColor = "@android:color/white"
+            android:textSize = "@dimen/label_text_size"
+            app:drawableTopCompat = "@drawable/ic_trash_can"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toEndOf = "@id/editButton"
+            app:layout_constraintTop_toTopOf = "parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

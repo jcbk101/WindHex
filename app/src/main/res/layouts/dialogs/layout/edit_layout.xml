@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width = "@dimen/_220sdp"
+            android:layout_height = "wrap_content"
+            android:background = "?myDialogBox"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = ".4">
+
+        <!--
+        //##########################
+        //
+        // Header
+        //
+        //##########################
+        -->
+        <FrameLayout
+                android:id = "@+id/editHeaderLayout"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:background = "?colorPrimaryDark"
+                app:layout_constraintEnd_toStartOf = "@id/cancelEdit"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent">
+
+            <com.GenesysEast.windhex.CustomControls.GradientTextView
+                    android:id = "@+id/editBanner"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_gravity = "center"
+                    android:text = "@string/edit_header"
+                    android:textColor = "@android:color/white"
+                    android:textSize = "@dimen/header_text_size"
+                    android:textStyle = "bold"
+                    app:colorList = "?myColorList"
+                    app:gradient = "on"
+                    app:strokeColor = "@android:color/black"
+                    app:strokeWidth = "@dimen/_2ssp" />
+        </FrameLayout>
+
+        <ImageView
+                android:id = "@+id/cancelEdit"
+                android:layout_width = "@dimen/icon_size"
+                android:layout_height = "@dimen/icon_size"
+                android:background = "?android:itemBackground"
+                android:contentDescription = "@string/dialog_close_button_desc"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:layout_constraintBottom_toTopOf="@id/dividerEdit"
+                app:srcCompat = "@drawable/close_x" />
+
+
+        <View
+                android:id = "@+id/dividerEdit"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintBottom_toTopOf = "@id/editLayout"
+                app:layout_constraintTop_toBottomOf = "@id/editHeaderLayout" />
+
+
+        <!--
+        //###############################
+        //
+        // Edit text
+        //
+        //#################################
+        -->
+        <FrameLayout
+                android:id = "@+id/editLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?attr/colorPrimaryDark"
+                app:layout_constraintTop_toBottomOf = "@id/dividerEdit">
+
+            <EditText
+                    android:id = "@+id/editString"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:background = "@android:color/white"
+                    android:ems = "10"
+                    android:hint = "@string/edit_hint"
+                    android:imeOptions = "flagNoFullscreen"
+                    android:inputType = "textNoSuggestions"
+                    android:maxLength = "1024"
+                    android:maxLines = "1"
+                    android:padding = "@dimen/_1sdp"
+                    android:textColor = "@android:color/black"
+                    android:textSize = "@dimen/edittext_text_size" />
+        </FrameLayout>
+
+        <!--
+        //########################
+        //
+        // Switch
+        //
+        //########################
+        -->
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/switchText"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:text = "@string/edit_use_table"
+                android:textColor = "?android:textColorPrimary"
+                android:textSize = "@dimen/label_text_size"
+                app:layout_constraintBottom_toBottomOf = "@id/editSwitch"
+                app:layout_constraintEnd_toStartOf = "@id/editSwitch"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/editLayout"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_2sdp"
+                tools:checked = "true" />
+
+        <androidx.appcompat.widget.SwitchCompat
+                android:id = "@+id/editSwitch"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?colorPrimary"
+                android:textColor = "?android:textColorPrimary"
+                android:textOff = "@string/edit_use_table"
+                android:textOn = "@string/edit_use_table"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toEndOf = "@id/switchText"
+                app:layout_constraintTop_toBottomOf = "@id/editLayout" />
+
+        <!--
+        //###########################
+        //
+        // Dialog buttons
+        //
+        //###########################
+        -->
+        <Button
+                android:id = "@+id/cancelButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:text = "@string/edit_button_cancel"
+                android:textSize = "@dimen/button_text_size"
+                app:layout_constraintEnd_toStartOf = "@id/insertButton"
+                app:layout_constraintTop_toBottomOf = "@id/editSwitch" />
+
+        <Button
+                android:id = "@+id/insertButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:text = "@string/edit_button_insert"
+                android:textSize = "@dimen/button_text_size"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/editSwitch" />
+
+        <TextView
+                android:id = "@+id/warningText"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@id/insertButton"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:padding = "@dimen/_2sdp"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/message_text_size"
+                android:textStyle = "italic"
+                android:visibility = "gone"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/cancelButton"
+                tools:text = "@string/edit_warning"
+                tools:visibility = "visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

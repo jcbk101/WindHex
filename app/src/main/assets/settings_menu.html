@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset='us-ascii'>  
+        <link rel="stylesheet" type="text/css" href="help_style.css">  
+        <title>
+        </title>
+		
+		<!-- Javascript code to process color data -->
+		<script type = "text/javaScript" src = "help_js.js"> </script>
+		
+    </head>
+    <body>  
+	
+		<!-- Scroll to Top button -->
+		<button onclick="topFunction()" id="myBtn" >Top</button>
+
+	
+        <div class ="main_header" id= "pageHeader" >    
+            WindHex Mobile: Settings Menu            
+        </div>
+		
+		<br>
+        <div class="text_message">    
+            <div class="sub_topic">Settings menu</div>				
+			<br>
+				When you click on "<strong>Current Theme</strong>", a popup menu should appear which gives you the opportunity to change the color theme
+				to one of the predefined themes. All other switches within the menu list have detailed information about their usages.
+        </div>
+		
+		<br>
+		<a href="main_page.html">
+			<div class="bottom_home">
+				Return to main page
+			</div>
+		</a>
+		
+		<!--	Change background colors -->
+		<script>
+			getFromAndroid(0);	// Body Background
+			getFromAndroid(1);	// Text message background
+			getFromAndroid(2);	// Sub Topic background
+			getFromAndroid(3);	// Button color
+			
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};			
+		</script>				
+    </body>
+</html>

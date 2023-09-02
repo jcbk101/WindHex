@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/titleLayout"
+            android:layout_width = "@dimen/_220sdp"
+            android:layout_height = "wrap_content"
+            android:animateLayoutChanges = "true"
+            android:background = "?myDialogBox"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:layout_constraintVertical_bias = ".4">
+
+        <!--
+        //#########################
+        //
+        // Header
+        //
+        //#########################
+        -->
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/searchTitle"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:gravity = "center_horizontal"
+                android:text = "@string/search_edit_title"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/header_text_size"
+                android:textStyle = "bold"
+                app:colorList = "?myColorList"
+                app:gradient = "on"
+                app:layout_constraintEnd_toStartOf = "@id/cancelFind"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_2sdp" />
+
+        <ImageView
+                android:id = "@+id/cancelFind"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:background = "?android:itemBackground"
+                app:layout_constraintBottom_toBottomOf = "@id/searchTitle"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "@id/searchTitle"
+                app:srcCompat = "@drawable/close_x" />
+
+        <View
+                android:id = "@+id/dividerFind"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintTop_toBottomOf = "@id/searchTitle" />
+
+        <!--
+        //#########################
+        //
+        // Edit text and Search button
+        //
+        //#########################
+        -->
+        <FrameLayout
+                android:id = "@+id/findLayout"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_6sdp"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?colorPrimary"
+                app:layout_constraintEnd_toStartOf = "@id/findButton"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/dividerFind">
+
+            <EditText
+                    android:id = "@+id/searchText"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:background = "@android:color/white"
+                    android:ems = "10"
+                    android:hint = "@string/search_edit_text"
+                    android:imeOptions = "flagNoFullscreen"
+                    android:inputType = "textVisiblePassword|textNoSuggestions"
+                    android:padding = "@dimen/_2sdp"
+                    android:textColor = "@android:color/black"
+                    android:textColorHint = "@android:color/darker_gray"
+                    android:textSize = "@dimen/edittext_text_size"
+                    android:visibility = "visible"
+                    tools:text = "01345FED" />
+        </FrameLayout>
+
+        <ImageView
+                android:id = "@+id/findButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:background = "?android:itemBackground"
+                android:scaleType = "fitCenter"
+                android:text = "@string/action_find"
+
+                app:layout_constraintBottom_toBottomOf = "@id/findLayout"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "@id/findLayout"
+                app:srcCompat = "@drawable/hex_search" />
+
+        <!--
+        //#########################
+        //
+        // Table selector
+        //
+        //#########################
+        -->
+        <FrameLayout
+                android:id = "@+id/spinnerLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@drawable/border_box"
+                android:orientation = "vertical"
+                android:padding = "@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf = "@id/findLayout">
+
+            <Spinner
+                    android:id = "@+id/replaceSpinner"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:spinnerMode = "dropdown"
+                    android:theme="@style/Spinner.Stylistic"
+                    tools:listitem = "@layout/tabler_spinner_item" />
+        </FrameLayout>
+
+
+        <View
+                android:id = "@+id/dividerFind2"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintTop_toBottomOf = "@id/spinnerLayout" />
+
+        <!--
+        //###########################
+        //
+        // Check boxes
+        //
+        //###########################
+        -->
+        <LinearLayout
+                android:id = "@+id/checkboxLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:orientation = "vertical"
+                android:padding = "@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf = "@id/dividerFind2">
+
+            <CheckBox
+                    android:id = "@+id/listResults"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "#2F000000"
+                    android:button = "@drawable/check_box_states"
+                    android:tag = "16"
+                    android:text = "@string/search_list_results"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size" />
+
+            <CheckBox
+                    android:id = "@+id/searchFromStart"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "#2F000000"
+                    android:button = "@drawable/check_box_states"
+                    android:tag = "32"
+                    android:text = "@string/search_beginning"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size" />
+
+            <CheckBox
+                    android:id = "@+id/maxFindList"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "#2F000000"
+                    android:button = "@drawable/check_box_states"
+                    android:tag = "64"
+                    android:text = "@string/search_limit_list"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size" />
+        </LinearLayout>
+
+        <!--
+        //#########################
+        //
+        // Character selection Area
+        //
+        //#########################
+        -->
+        <LinearLayout
+                android:id = "@+id/uniLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:orientation = "vertical"
+                android:padding = "@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/checkboxLayout">
+
+            <FrameLayout
+                    android:layout_width = "match_parent" android:layout_height = "wrap_content" android:background = "@drawable/border_box" android:padding = "@dimen/_2sdp">
+
+                <Spinner
+                        android:id = "@+id/searchSpinner"
+                        style = "@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:spinnerMode = "dropdown"
+                        android:theme = "@style/Spinner.Stylistic"
+                        tools:listitem = "@layout/tabler_spinner_item" />
+            </FrameLayout>
+
+            <!--
+            //########################
+            // Grid Layout
+            //########################
+            -->
+            <GridView
+                    android:id = "@+id/searchGrid"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "@dimen/_120sdp"
+                    android:layout_marginTop = "@dimen/_4sdp"
+                    android:background = "?colorPrimaryDark"
+                    android:numColumns = "8"
+                    android:padding = "@dimen/_2sdp"
+                    tools:listitem = "@layout/grid_item"
+                    tools:visibility = "visible" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

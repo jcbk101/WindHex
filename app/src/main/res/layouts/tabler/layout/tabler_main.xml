@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:ads = "http://schemas.android.com/apk/res-auto"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:background = "?attr/colorPrimaryDark"
+        android:orientation = "vertical">
+
+    <!--
+    //###########################
+    //
+    // Toolbar
+    //
+    //###########################
+    -->
+    <androidx.appcompat.widget.Toolbar
+            android:id = "@+id/tableBar"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:background = "?myToolbar"
+            android:theme = "@style/Theme.AppBarOverlay"
+            app:navigationIcon = "@drawable/ic_exit" />
+
+    <!--
+    //###########################
+    //
+    // Editing text
+    //
+    //###########################
+    -->
+    <FrameLayout
+            android:id = "@+id/cardTableLayout"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "@dimen/_2sdp"
+            android:background = "@drawable/border_box">
+
+        <EditText
+                android:id = "@+id/tableInput"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:background = "@android:color/white"
+                android:ems = "10"
+                android:hint = "@string/table_input_hint"
+                android:imeOptions = "normal|flagNoPersonalizedLearning|actionDone|flagNoExtractUi|flagNoFullscreen"
+                android:inputType = "textNoSuggestions|text"
+                android:nextFocusUp = "@id/tableGrid"
+                android:nextFocusDown = "@id/currentTable"
+                android:padding = "@dimen/_2sdp"
+                android:singleLine = "true"
+                android:textColor = "@android:color/black"
+                android:textSize = "@dimen/edittext_text_size"
+                android:typeface = "monospace" />
+    </FrameLayout>
+
+
+    <!--
+    //######################################################
+    //
+    //
+    //
+    //######################################################
+    -->
+    <LinearLayout
+            android:id = "@+id/editorLayout"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:orientation = "vertical"
+            android:weightSum = "2">
+
+
+        <!--
+        //###########################
+        //
+        // List View: Editing
+        //
+        //###########################
+        -->
+        <FrameLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_margin = "@dimen/_4sdp"
+                android:layout_weight = "1"
+                android:background = "?myContainer"
+                android:padding = "@dimen/_4sdp">
+
+            <ListView
+                    android:id = "@+id/currentTable"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:background = "?colorPrimaryDark"
+                    android:clickable = "true"
+                    android:divider = "?attr/colorPrimary"
+                    android:dividerHeight = "1dp"
+                    android:focusable = "true"
+                    android:focusableInTouchMode = "true"
+                    android:nextFocusLeft = "@id/tableInput"
+                    android:nextFocusRight = "@id/btnOpen"
+                    android:padding = "@dimen/_4sdp"
+                    tools:listitem = "@layout/jump_item" />
+        </FrameLayout>
+
+
+        <!--
+        //###########################
+        //
+        // Quick buttons: Center Bar
+        //
+        //###########################
+        -->
+        <LinearLayout
+                android:id = "@+id/tablerMenuButtons"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "@dimen/_2sdp"
+                android:background = "@drawable/border_box"
+                android:orientation = "horizontal"
+                android:padding = "@dimen/_2sdp"
+                android:weightSum = "4">
+
+
+            <ImageView
+                    android:id = "@+id/btnOpen"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1"
+                    android:background = "?android:itemBackground"
+                    android:clickable = "true"
+                    android:focusable = "true"
+                    android:gravity = "center"
+                    android:nextFocusUp = "@id/currentTable"
+                    android:nextFocusDown = "@id/blockSpinner"
+                    android:onClick = "onClick"
+                    android:textColor = "?attr/menuTextColor"
+                    app:srcCompat = "@drawable/ic_folder_open" />
+
+            <ImageView
+                    android:id = "@+id/btnSave"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1"
+                    android:background = "?android:itemBackground"
+                    android:clickable = "true"
+                    android:focusable = "true"
+                    android:gravity = "center"
+                    android:nextFocusUp = "@id/currentTable"
+                    android:nextFocusDown = "@id/blockSpinner"
+                    android:onClick = "onClick"
+                    android:textColor = "?attr/menuTextColor"
+                    app:srcCompat = "@drawable/ic_save" />
+
+            <ImageView
+                    android:id = "@+id/btnErase"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1"
+                    android:background = "?android:itemBackground"
+                    android:clickable = "true"
+                    android:focusable = "true"
+                    android:gravity = "center"
+                    android:nextFocusUp = "@id/currentTable"
+                    android:nextFocusDown = "@id/blockSpinner"
+                    android:onClick = "onClick"
+                    android:textColor = "?attr/menuTextColor"
+                    app:srcCompat = "@drawable/table_backspace" />
+
+            <ImageView
+                    android:id = "@+id/btnDone"
+                    android:layout_width = "0dp"
+                    android:layout_height = "match_parent"
+                    android:layout_weight = "1"
+                    android:background = "?android:itemBackground"
+                    android:clickable = "true"
+                    android:focusable = "true"
+                    android:gravity = "center"
+                    android:nextFocusUp = "@id/currentTable"
+                    android:nextFocusDown = "@id/blockSpinner"
+                    android:onClick = "onClick"
+                    android:textColor = "?attr/menuTextColor"
+                    app:srcCompat = "@drawable/table_keyboard_return" />
+
+        </LinearLayout>
+
+
+        <!--
+        //###########################
+        //
+        // Spinner: Character select
+        //
+        //###########################
+        -->
+        <FrameLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "@dimen/_2sdp"
+                android:background = "@drawable/border_box"
+                android:padding = "@dimen/_1sdp">
+
+            <Spinner
+                    android:id = "@+id/blockSpinner"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:addStatesFromChildren = "false"
+                    android:dropDownWidth = "wrap_content"
+                    android:nextFocusLeft = "@id/tableGrid"
+                    android:nextFocusRight = "@id/btnDone"
+                    android:nextFocusUp = "@id/btnDone"
+                    android:nextFocusDown = "@id/tableGrid"
+                    android:spinnerMode = "dialog"
+                    android:theme = "@style/Spinner.Stylistic"
+                    tools:listitem = "@layout/tabler_spinner_item" />
+
+        </FrameLayout>
+
+
+        <!--
+        //###########################
+        //
+        // Grid: Character select
+        //
+        //###########################
+        -->
+        <FrameLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_margin = "@dimen/_4sdp"
+                android:layout_weight = "1"
+                android:background = "?myContainer"
+                android:padding = "@dimen/_2sdp">
+
+            <GridView
+                    android:id = "@+id/tableGrid"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:background = "?colorPrimary"
+                    android:descendantFocusability = "afterDescendants"
+                    android:drawSelectorOnTop = "true"
+                    android:nextFocusUp = "@id/blockSpinner"
+                    android:nextFocusDown = "@id/tableInput"
+                    android:numColumns = "8"
+                    android:padding = "@dimen/_2sdp"
+                    tools:listitem = "@layout/tabler_grid" />
+
+        </FrameLayout>
+
+        <!--
+        // Ad
+        -->
+        <FrameLayout
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content">
+
+            <com.google.android.gms.ads.AdView
+                    android:id = "@+id/tablerAdViewDebug"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    ads:adSize = "SMART_BANNER"
+                    tools:visibility="visible"
+                    android:visibility="invisible"
+                    ads:adUnitId = "ca-app-pub-3940256099942544/6300978111" />
+
+            <com.google.android.gms.ads.AdView
+                    android:id = "@+id/tablerAdView"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    ads:adSize = "SMART_BANNER"
+                    android:visibility="invisible"
+                    ads:adUnitId = "ca-app-pub-7978336361271355/7295890145"/>
+
+        </FrameLayout>
+
+        <!--
+            // for testing
+            ads:adUnitId = "ca-app-pub-3940256099942544/6300978111"/>
+            // for release
+            ads:adUnitId = "ca-app-pub-7978336361271355/7295890145"
+         -->
+
+    </LinearLayout>
+
+</LinearLayout>

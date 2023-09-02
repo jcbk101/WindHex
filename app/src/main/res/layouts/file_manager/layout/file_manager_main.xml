@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:ads = "http://schemas.android.com/apk/res-auto"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:animateLayoutChanges = "true"
+        android:background = "@android:color/white">
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id = "@+id/dirToolbar"
+            android:layout_width = "match_parent"
+            android:layout_height = "@dimen/app_bar_height"
+            android:background = "?myToolbar"
+            android:theme = "@style/Theme.AppBarOverlay"
+            ads:layout_constraintTop_toTopOf = "parent"
+            app:navigationIcon = "@drawable/file_manager_arrow_back" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/saveNameLayout"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:background = "?colorAccent"
+            ads:layout_constraintStart_toStartOf = "parent"
+            ads:layout_constraintTop_toBottomOf = "@id/dirToolbar">
+
+        <Button
+                android:id = "@+id/saveButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "@dimen/_44sdp"
+                android:text = "@string/save_text"
+                android:textColor = "?attr/menuTextColor"
+                ads:layout_constraintStart_toStartOf = "parent"
+                ads:layout_constraintTop_toTopOf = "parent"
+                app:drawableLeftCompat = "@drawable/ic_save" />
+
+        <!--
+        //#############################
+        //
+        // Edit text
+        //
+        //#############################
+        -->
+        <FrameLayout
+                android:layout_width = "0dp"
+                android:layout_height = "0dp"
+                android:background = "?colorAccent"
+                android:padding = "@dimen/_4sdp"
+                ads:layout_constraintBottom_toBottomOf = "@id/saveButton"
+                ads:layout_constraintEnd_toEndOf = "parent"
+                ads:layout_constraintStart_toEndOf = "@id/saveButton"
+                ads:layout_constraintTop_toTopOf = "@id/saveButton">
+
+            <EditText
+                    android:id = "@+id/saveName"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:background = "@android:color/white"
+                    android:layout_gravity="center"
+                    android:hint = "@string/save_hint"
+                    android:imeOptions = "flagNoFullscreen"
+                    android:textColor = "@android:color/black"
+                    android:textSize = "@dimen/_14ssp" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+    //###################################
+    //
+    // List of file names
+    //
+    //###################################
+    -->
+    <ListView
+            android:id = "@+id/dirList"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:background = "@android:color/white"
+            android:dividerHeight = "@dimen/_1sdp"
+            android:padding = "@dimen/_4sdp"
+            android:visibility = "visible"
+            ads:layout_constraintBottom_toTopOf = "@id/dirAdView"
+            ads:layout_constraintTop_toBottomOf = "@id/saveNameLayout"
+            tools:visibility = "invisible" />
+
+
+    <!--
+    //################################
+    //
+    // When no files are found
+    //
+    //################################
+    -->
+    <include
+            layout = "@layout/file_manager_no_file"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:visibility = "invisible"
+            ads:layout_constraintBottom_toTopOf = "@id/dirAdView"
+            ads:layout_constraintTop_toBottomOf = "@id/saveNameLayout" />
+
+
+    <com.google.android.gms.ads.AdView
+            android:id = "@+id/dirAdView"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:visibility = "invisible"
+            ads:adSize = "SMART_BANNER"
+            ads:adUnitId = "ca-app-pub-7978336361271355/5868910790"
+            ads:layout_constraintBottom_toBottomOf = "parent" />
+
+    <com.google.android.gms.ads.AdView
+            android:id = "@+id/dirAdViewDebug"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:visibility = "invisible"
+            ads:adSize = "SMART_BANNER"
+            ads:adUnitId = "ca-app-pub-3940256099942544/6300978111"
+            ads:layout_constraintBottom_toBottomOf = "parent"
+            tools:visibility = "visible" />
+
+
+    <!--
+        // for testing
+        ads:adUnitId = "ca-app-pub-3940256099942544/6300978111"/>
+        // for release
+        ads:adUnitId = "ca-app-pub-7978336361271355/5868910790"
+     -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

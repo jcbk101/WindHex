@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset='us-ascii'>  
+        <link rel="stylesheet" type="text/css" href="help_style.css">  
+        <title>
+        </title>
+		
+		<!-- Javascript code to process color data -->
+		<script type = "text/javaScript" src = "help_js.js"> </script>
+		
+    </head>
+    <body>  
+    	
+		<!-- Scroll to Top button -->
+		<button onclick="topFunction()" id="myBtn" >Top</button>
+
+
+		<div class ="main_header" id= "pageHeader" >    
+            WindHex Mobile: File Browser            
+        </div>
+		
+		<br>
+        <div class="text_message">    
+            <div class="sub_topic">Navigating the file system</div>
+			
+			<dl>
+				<dt><div class="topic_subject">File browser</div>											
+				<ul>
+					<li>Clicking the "<strong>left arrow</strong>" button on the menu bar navigates backwards through the file browser.
+					<li>The "<strong>Options Icon</strong>" on the right side of the menu bar will display an options menu.
+					<li>Clicking on any selection within the list with a folder icon will open up that folder. 
+					<li>Clicking on any selection within the list with a file icon will select the file to be opened for editing. The file browser will inform
+						you of the files capabilites--can be edited or not.
+					<li>The selections in the option menu are connected to the system settings menu. These options can be set from this option menu,
+						or they can be set from the <strong>System Settings Menu</strong>.
+					<li>Clicking the system's back button will allow you to exit the file browser, and then return to a previous task.
+				</ul>
+				<br>
+				<br>
+				<dt><div class="topic_subject">File Management</div>											
+					<dd>When accessing the options menu, you will see "<strong>Create New Folder</strong>" and "<strong>Create New File</strong>".
+						Creating either is not permitted on the "<strong>File Storage</strong>" level. These commands should function properly
+						 inside most directories on the device.
+									
+			</dl>
+        </div>
+		
+		<br>
+		<a href="main_page.html">
+			<div class="bottom_home">
+				Return to main page
+			</div>
+		</a>
+		
+		<!--	Change background colors -->
+		<script>
+			getFromAndroid(0);	// Body Background
+			getFromAndroid(1);	// Text message background
+			getFromAndroid(2);	// Sub Topic background
+			getFromAndroid(3);	// Button color
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};			
+		</script>				
+    </body>
+</html>

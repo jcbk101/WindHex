@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width = "@dimen/_250sdp"
+            android:layout_height = "wrap_content"
+            android:background = "?myDialogBox"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
+
+        <!--
+        //##########################
+        //
+        // Header
+        //
+        //##########################
+        -->
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/selectViewHeader"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:background = "?attr/colorPrimaryDark"
+                android:gravity = "center_horizontal"
+                android:text = "@string/select_data_header"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/header_text_size"
+                android:textStyle = "bold"
+                app:colorList = "?myColorList"
+                app:gradient = "on"
+
+                app:layout_constraintEnd_toStartOf = "@id/selectCancel"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:layout_constraintBottom_toTopOf="@id/dividerSelect"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_2sdp" />
+
+        <ImageView
+                android:id = "@+id/selectCancel"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:background = "?android:itemBackground"
+                android:contentDescription = "@string/dialog_close_button_desc"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:layout_constraintBottom_toTopOf="@id/dividerSelect"
+                app:srcCompat = "@drawable/close_x" />
+
+        <View
+                android:id = "@+id/dividerSelect"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintTop_toBottomOf = "@id/selectViewHeader" />
+
+
+        <!--
+        //#############################
+        //
+        // Offset boxes
+        //
+        //#############################
+        -->
+        <LinearLayout
+                android:id = "@+id/selectLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:orientation = "vertical"
+                android:padding = "@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf = "@id/dividerSelect">
+
+            <EditText
+                    android:id = "@+id/startOffset"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "@android:color/white"
+                    android:digits = "0123456789ABCDEFabcdef"
+                    android:hint = "@string/select_data_start"
+                    android:imeOptions = "normal|flagNoFullscreen"
+                    android:inputType = "textVisiblePassword|textNoSuggestions"
+                    android:padding = "@dimen/_2sdp"
+                    android:textColor = "@android:color/black"
+                    android:textSize = "@dimen/edittext_text_size" />
+
+            <EditText
+                    android:id = "@+id/endOffset"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "@android:color/white"
+                    android:digits = "0123456789ABCDEFabcdef"
+                    android:hint = "@string/select_data_end"
+                    android:imeOptions = "normal|flagNoFullscreen"
+                    android:inputType = "textVisiblePassword|textNoSuggestions"
+                    android:padding = "@dimen/_2sdp"
+                    android:textColor = "@android:color/black"
+                    android:textSize = "@dimen/edittext_text_size" />
+
+            <EditText
+                    android:id = "@+id/fillByte"
+                    android:layout_width = "wrap_content"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "@android:color/white"
+                    android:digits = "0123456789ABCDEFabcdef"
+                    android:hint = "@string/select_fill_byte"
+                    android:imeOptions = "normal|flagNoFullscreen"
+                    android:inputType = "textVisiblePassword|textNoSuggestions"
+                    android:padding = "@dimen/_2sdp"
+                    android:textColor = "@android:color/black"
+                    android:textSize = "@dimen/edittext_text_size"
+                    android:visibility = "invisible"
+                    tools:visibility = "visible" />
+
+        </LinearLayout>
+
+
+        <View
+                android:id = "@+id/dividerSelect2"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintBottom_toTopOf = "@id/selectFillButton"
+                app:layout_constraintTop_toBottomOf = "@id/selectLayout" />
+
+        <!--
+        //#############################
+        //
+        // Buttons
+        //
+        //#############################
+        -->
+        <Button
+                android:id = "@+id/selectCancelButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:text = "@string/jump_cancel"
+                android:textSize = "@dimen/button_text_size"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toStartOf = "@id/selectFillButton"
+                app:layout_constraintTop_toBottomOf = "@id/dividerSelect2" />
+
+        <Button
+                android:id = "@+id/selectFillButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:text = "@string/hex_select_data"
+                android:textSize = "@dimen/button_text_size"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/dividerSelect2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

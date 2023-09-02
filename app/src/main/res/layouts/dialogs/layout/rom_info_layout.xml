@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation = "vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width = "@dimen/_220sdp"
+            android:layout_height = "wrap_content"
+            android:background = "?myDialogBox"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
+
+        <!--
+        //#############################
+        //
+        // Header
+        //
+        //#############################
+        -->
+        <FrameLayout
+                android:id = "@+id/romInfoLayout"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                app:layout_constraintEnd_toStartOf = "@id/cancelInfo"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent">
+
+            <com.GenesysEast.windhex.CustomControls.GradientTextView
+                    android:id = "@+id/romInfoHeader"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:gravity = "center"
+                    android:text = "@string/rom_info_title"
+                    android:textColor = "?attr/colorAccent"
+                    android:textSize = "@dimen/header_text_size"
+                    android:textStyle = "bold"
+                    app:colorList = "?myColorList"
+                    app:gradient = "on"
+                    app:gradientOrientation = "horizontal"
+                    app:strokeColor = "@android:color/black"
+                    app:strokeWidth = "@dimen/_2ssp" />
+        </FrameLayout>
+
+        <ImageView
+                android:id = "@+id/cancelInfo"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:background = "?android:itemBackground"
+                android:contentDescription = "@string/dialog_close_button_desc"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:layout_constraintBottom_toTopOf="@id/dividerInfo"
+                app:srcCompat = "@drawable/close_x" />
+
+        <View
+                android:id = "@+id/dividerInfo"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintTop_toBottomOf = "@id/romInfoLayout" />
+
+        <!--
+        //#########################
+        //
+        // Details
+        //
+        //#########################
+        -->
+        <LinearLayout
+                android:id = "@+id/infoLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:orientation = "vertical"
+                android:padding = "@dimen/_2sdp"
+                app:layout_constraintTop_toBottomOf = "@id/dividerInfo">
+
+            <TextView
+                    android:id = "@+id/romInfoName"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_4sdp"
+                    android:background = "#2E000000"
+                    android:padding = "@dimen/_2sdp"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size"
+                    tools:text = "Filename: Romname.ext" />
+
+            <TextView
+                    android:id = "@+id/romInfoSize"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_4sdp"
+                    android:background = "#2E000000"
+                    android:padding = "@dimen/_2sdp"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size"
+                    tools:text = "File size: 1,409,245" />
+
+            <TextView
+                    android:id = "@+id/romInfoDate"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_4sdp"
+                    android:background = "#2E000000"
+                    android:padding = "@dimen/_2sdp"
+                    android:textColor = "?attr/menuTextColor"
+                    android:textSize = "@dimen/label_text_size"
+                    tools:text = "Date modified: " />
+        </LinearLayout>
+
+        <!--
+        //###########################
+        //
+        // Buttons
+        //
+        //###########################
+        -->
+        <Button
+                android:id = "@+id/romExitButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_gravity = "center_horizontal"
+                android:layout_marginTop = "@dimen/_8sdp"
+                android:background = "?android:itemBackground"
+                android:text = "@string/close_rom_info"
+                android:textSize = "@dimen/button_text_size"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/infoLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

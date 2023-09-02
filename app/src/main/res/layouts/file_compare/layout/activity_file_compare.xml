@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+    <!--
+    //##########################
+    //
+    // Header
+    //
+    //##########################
+    -->
+    <com.GenesysEast.windhex.CustomControls.GradientTextView
+            android:id = "@+id/compareBar"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:background = "?myToolbar"
+            android:gravity = "center"
+            android:padding = "@dimen/_2sdp"
+            android:textColor = "@android:color/white"
+            android:textSize = "@dimen/header_text_size"
+            android:textStyle = "italic|bold"
+            app:colorList = "?myColorList"
+            app:gradient = "on"
+            app:layout_constraintTop_toTopOf = "parent"
+            app:strokeColor = "@android:color/black"
+            app:strokeWidth = "@dimen/_2sdp"
+            tools:text = "Comparing:" />
+
+
+    <!--
+    //############################
+    //
+    // Main Window
+    //
+    //############################
+    -->
+    <com.GenesysEast.windhex.file_compare.CompareHexView
+            android:id = "@+id/compareHexView"
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:background = "?myBackground"
+            app:layout_constraintBottom_toTopOf = "@id/bottomActionBar"
+            app:layout_constraintTop_toBottomOf = "@id/compareBar" />
+
+    <!--
+    //################################
+    //
+    // Bottom tool bar
+    //
+    //################################
+    -->
+    <LinearLayout
+            android:id = "@+id/bottomActionBar"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@id/compareHexView">
+
+        <ImageView
+                android:id = "@+id/compareBack"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = ".15"
+                android:background = "?android:itemBackground"
+                android:clickable = "true"
+                android:focusable = "true"
+                android:onClick = "onClick"
+                app:srcCompat = "@drawable/ic_rewind" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+                android:id = "@+id/fileSeeker"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = ".70"
+                android:background = "?colorPrimaryDark"
+                android:progress = "0" />
+
+        <ImageView
+                android:id = "@+id/compareNext"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = ".15"
+                android:background = "?android:itemBackground"
+                android:clickable = "true"
+                android:focusable = "true"
+                android:onClick = "onClick"
+                app:srcCompat = "@drawable/ic_forward" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

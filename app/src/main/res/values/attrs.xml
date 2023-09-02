@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name = "myBackground" format = "color" />
+    <attr name = "myAlertBG" format = "color" />
+
+    <attr name = "myButton" format = "reference" />
+    <attr name = "myToolbar" format = "reference" />
+    <attr name = "myListSelector" format = "reference" />
+    <attr name = "myDialogBox" format = "reference" />
+    <attr name = "myContainer" format = "reference" />
+    <attr name = "myBasicBox" format = "reference" />
+    <attr name = "myColorList" format = "reference" />
+
+    <attr name = "myIconColor" format = "color" />
+    <attr name = "menuTextColor" format = "color" />
+
+    <attr name = "hexColorPrimary" format = "color" />
+    <attr name = "hexColorSecondary" format = "color" />
+
+    <!-- SeekBar color Palette -->
+    <attr name = "mySeekBar" format = "reference" />
+    <attr name = "mySwitch" format = "reference" />
+
+
+    <!--
+    //##############################
+    //
+    // Custom control attributes
+    //
+    //##############################
+    -->
+    <declare-styleable name = "Mother">
+        <!--        <attr name = "strokeColor" format = "color|integer" />-->
+        <attr name = "strokeWidth" format = "dimension" />
+        <attr name = "text" format = "string" />
+
+        <attr name = "startColor" format = "color|integer" />
+        <attr name = "endColor" format = "color|integer" />
+        <attr name = "colorList" format = "reference" />
+        <attr name = "strokeColorList" format = "reference" />
+        <attr name = "gradientOrientation" format = "string">
+            <flag name = "vertical" value = "1" />
+            <flag name = "horizontal" value = "0" />
+        </attr>
+        <attr name = "gradient" format = "integer">
+            <flag name = "on" value = "1" />
+            <flag name = "off" value = "0" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name = "CustomImageButton" parent = "Mother">
+        <attr name = "text" />
+    </declare-styleable>
+
+    <declare-styleable name = "ImageTextView" parent = "Mother">
+        <attr name = "text" />
+        <attr name = "strokeColor" />
+        <attr name = "strokeWidth" />
+        <attr name = "textColor" format = "color|integer" />
+        <attr name = "fontFamily" />
+        <attr name = "textSize" format = "dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name = "GradientTextView" parent = "Mother">
+        <attr name = "startColor" />
+        <attr name = "endColor" />
+        <attr name = "colorList" />
+        <attr name = "strokeColorList" />
+        <attr name = "strokeColor" />
+        <attr name = "strokeWidth" />
+        <attr name = "gradientOrientation" />
+        <attr name = "gradient" />
+    </declare-styleable>
+
+    <declare-styleable name = "GradientButton" parent = "Mother">
+        <attr name = "startColor" />
+        <attr name = "endColor" />
+        <attr name = "colorList" />
+        <attr name = "strokeColorList" />
+        <attr name = "strokeColor" />
+        <attr name = "strokeWidth" />
+        <attr name = "gradientOrientation" />
+        <attr name = "gradient" />
+    </declare-styleable>
+
+</resources>

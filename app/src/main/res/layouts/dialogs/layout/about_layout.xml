@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:orientation = "vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width = "@dimen/_230sdp"
+            android:layout_height = "@dimen/_250sdp"
+            android:background = "?myDialogBox"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
+
+        <ImageView
+                android:id = "@+id/imageView"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_54sdp"
+                android:background = "@drawable/biz_banner"
+                android:scaleType = "center"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent" />
+
+
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/bizTitle"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:gravity = "start"
+                android:paddingStart = "@dimen/_4sdp"
+                android:paddingEnd = "@dimen/_4sdp"
+                android:text = "@string/company_name_main"
+                android:textAllCaps = "true"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/_20ssp"
+                android:textStyle = "bold"
+                android:typeface = "normal"
+                app:colorList = "@array/gold_reflection"
+                app:gradient = "on"
+                app:gradientOrientation = "vertical"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "@id/imageView"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_3sdp" />
+
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/bizWork"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:fontFamily = "sans-serif-black"
+                android:gravity = "center"
+                android:text = "@string/company_work_type"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/_18ssp"
+                android:textStyle = "bold"
+                app:layout_constraintBottom_toBottomOf = "@id/imageView"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/bizTitle"
+                app:strokeColor = "?colorAccent"
+                app:strokeWidth = "@dimen/_3sdp" />
+
+        <View
+                android:id="@+id/dividerRater"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintBottom_toTopOf = "@id/appNameText"
+                app:layout_constraintTop_toBottomOf = "@id/imageView" />
+
+
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/appNameText"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "@dimen/_3sdp"
+                android:background = "?myBasicBox"
+                android:gravity = "center"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:padding = "@dimen/_2sdp"
+                android:text = "@string/about_appname"
+                android:textColor = "?attr/colorButtonNormal"
+                android:textSize = "@dimen/header_text_size"
+                android:textStyle = "bold"
+                app:colorList = "?myColorList"
+                app:fontFamily = "sans-serif"
+                app:gradient = "on"
+                app:layout_constraintBottom_toTopOf = "@id/versionName"
+                app:layout_constraintTop_toBottomOf = "@id/imageView"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_2ssp" />
+
+        <TextView
+                android:id = "@+id/versionName"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "@dimen/_3sdp"
+                android:background = "?myBasicBox"
+                android:gravity = "center"
+                android:padding = "@dimen/_2sdp"
+                android:text = "@string/versionName"
+                android:textColor = "?attr/menuTextColor"
+                android:textSize = "@dimen/label_text_size"
+                android:textStyle = "italic|bold"
+                app:layout_constraintBottom_toTopOf = "@id/companyInfoText"
+                app:layout_constraintTop_toBottomOf = "@id/appNameText"
+                tools:text = "0.1.0" />
+
+
+        <TextView
+                android:id = "@+id/companyInfoText"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "@dimen/_3sdp"
+                android:background = "?myBasicBox"
+                android:gravity = "center"
+                android:padding = "@dimen/_2sdp"
+                android:text = "@string/company_info"
+                android:textColor = "?attr/menuTextColor"
+                android:textSize = "@dimen/label_text_size"
+                app:layout_constraintBottom_toTopOf = "@id/privacyLink"
+                app:layout_constraintTop_toBottomOf = "@id/versionName" />
+
+
+        <TextView
+                android:id = "@+id/privacyLink"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_margin = "@dimen/_3sdp"
+                android:background = "?myBasicBox"
+                android:gravity = "center"
+                android:padding = "@dimen/_2sdp"
+                android:text = "@string/privacy_link_text"
+                android:textColor = "?attr/menuTextColor"
+                android:textSize = "@dimen/header_text_size"
+                android:textStyle = "bold"
+                app:layout_constraintBottom_toTopOf = "@id/aboutExitButton"
+                app:layout_constraintTop_toBottomOf = "@id/companyInfoText"
+                tools:text = "Privacy Policy" />
+
+
+        <Button
+                android:id = "@+id/aboutExitButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:background = "?android:itemBackground"
+                android:text = "@string/close_rom_info"
+                android:textSize = "@dimen/button_text_size"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/privacyLink" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

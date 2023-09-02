@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/errorWindow"
+            android:layout_width = "@dimen/_220sdp"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "center"
+            android:background = "?myDialogBox"
+            android:padding = "@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
+
+        <ImageView
+                android:id = "@+id/msgIcon"
+                android:layout_width = "@dimen/_18sdp"
+                android:layout_height = "@dimen/_18sdp"
+                app:layout_constraintBottom_toTopOf = "@id/divider"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintHorizontal_bias = ".05"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:layout_constraintVertical_bias = "0.5"
+                app:srcCompat = "@android:drawable/ic_dialog_alert" />
+
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/msgTitle"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "@dimen/_4sdp"
+                android:layout_marginLeft = "@dimen/_4sdp"
+                android:gravity = "start"
+                android:maxLines = "1"
+                android:textColor = "@android:color/white"
+                android:textSize = "@dimen/header_text_size"
+                android:textStyle = "bold"
+                app:colorList = "?myColorList"
+                app:gradient = "on"
+                app:layout_constraintBottom_toBottomOf = "@id/msgIcon"
+                app:layout_constraintEnd_toStartOf = "@id/errorCancel"
+                app:layout_constraintHorizontal_bias = ".05"
+                app:layout_constraintStart_toEndOf = "@id/msgIcon"
+                app:layout_constraintTop_toTopOf = "@id/msgIcon"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_2sdp"
+                tools:text = "Error" />
+
+        <ImageView
+                android:id = "@+id/errorCancel"
+                android:layout_width = "@dimen/icon_size"
+                android:layout_height = "@dimen/icon_size"
+                android:background = "?android:itemBackground"
+                app:layout_constraintBottom_toTopOf = "@id/divider"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:srcCompat = "@drawable/close_x" />
+
+
+        <!--
+        //##########################
+        //
+        // Divider
+        //
+        //#########################
+        -->
+        <View
+                android:id = "@+id/divider"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_2sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@color/browser_actions_divider_color"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/msgTitle"
+                app:layout_constraintVertical_bias = ".25" />
+
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/msgText"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginBottom = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:gravity = "center"
+                android:scrollbars = "vertical"
+                android:textColor = "?android:textColorPrimary"
+                android:textSize = "@dimen/large_message_text_size"
+                app:layout_constraintTop_toBottomOf = "@id/divider"
+                app:layout_constraintVertical_bias = "0"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_2sdp"
+                tools:text = "This is a stupid ass test. Do the dumb ass test you piece of dog feces! Do the dumb ass test you piece of dog feces! Do the dumb ass test you piece of dog feces! Do the dumb ass test you piece of dog feces!"
+                tools:visibility = "visible" />
+        <!--tools:text = "This is a stupid ass error message test. This is a stupid ass error message test"-->
+
+
+        <!--
+        //#########################
+        //
+        // Listview for item list
+        //
+        //#########################
+        -->
+        <FrameLayout
+                android:id = "@+id/errorListLayout"
+                android:layout_width = "match_parent"
+                android:layout_height = "@dimen/_86sdp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginBottom = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:visibility = "gone"
+                app:layout_constraintBottom_toTopOf = "@id/invalidButtonDone"
+                app:layout_constraintTop_toBottomOf = "@id/msgText"
+                tools:visibility = "visible">
+
+            <ListView
+                    android:id = "@+id/errorListView"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:layout_margin = "@dimen/_2sdp"
+                    android:background = "?colorPrimaryDark"
+                    tools:listitem = "@layout/jump_item" />
+        </FrameLayout>
+
+
+        <!--
+        //##########################
+        //
+        // Buttons
+        //
+        //##########################
+        -->
+        <Button
+                android:id = "@+id/invalidButtonCancel"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:gravity = "center"
+                android:shadowColor = "@android:color/black"
+                android:textColor = "?android:textColorPrimary"
+                android:textSize = "@dimen/button_text_size"
+                android:visibility = "invisible"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toStartOf = "@id/invalidButtonNo"
+                app:layout_constraintTop_toBottomOf = "@id/errorListLayout"
+                app:layout_constraintVertical_bias = "1"
+                tools:text = "cancel"
+                tools:visibility = "visible" />
+
+        <Button
+                android:id = "@+id/invalidButtonNo"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@id/msgText"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:gravity = "center"
+                android:shadowColor = "@android:color/black"
+                android:textColor = "?android:textColorPrimary"
+                android:textSize = "@dimen/button_text_size"
+                android:visibility = "invisible"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toStartOf = "@id/invalidButtonDone"
+                app:layout_constraintTop_toBottomOf = "@id/errorListLayout"
+                app:layout_constraintVertical_bias = "1"
+                tools:text = "no"
+                tools:visibility = "visible" />
+
+        <Button
+                android:id = "@+id/invalidButtonDone"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_below = "@id/msgText"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:gravity = "center"
+                android:shadowColor = "@android:color/black"
+                android:textColor = "?android:textColorPrimary"
+                android:textSize = "@dimen/button_text_size"
+                android:visibility = "invisible"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/errorListLayout"
+                app:layout_constraintVertical_bias = "1"
+                tools:text = "done"
+                tools:visibility = "visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

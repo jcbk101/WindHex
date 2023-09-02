@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.GenesysEast.windhex"
+        minSdkVersion 29
+        targetSdkVersion 30
+        versionCode 8032    // Updated: July 14th, 2020, 9:10 p.m. [ RELEASED: 9:50 p.m. 7/14/2020 ]
+        versionName "0.8.32"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        // MULTIDEX
+        // Error: Cannot fit requested classes in a single dex file (# methods: 112626 > 65536)
+        multiDexEnabled true
+    }
+
+    applicationVariants.all { variant ->
+        variant.resValue "string", "versionName", "Current Version: " + variant.versionName
+    }
+
+    buildTypes {
+        release {
+            aaptOptions {
+                cruncherEnabled = false
+            }
+
+            jniDebuggable false
+            renderscriptDebuggable false
+            zipAlignEnabled true
+
+            aaptOptions {
+                cruncherEnabled = false
+            }
+
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [crashlyticsCollectionEnabled: "true"]
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+
+            firebaseCrashlytics {
+                mappingFileUploadEnabled false
+            }
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [crashlyticsCollectionEnabled: "false"]
+        }
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/drawables/file_compare',
+                            'src/main/res/drawables/helper',
+                            'src/main/res/drawables/keyboard',
+                            'src/main/res/drawables/dialogs',
+                            'src/main/res/drawables/file_manager',
+                            'src/main/res/drawables/hex_display',
+                            'src/main/res/drawables/home_screen',
+                            'src/main/res/drawables/settings_menu',
+                            'src/main/res/drawables/tabler',
+                            'src/main/res/drawables/theme_color_states',
+                            'src/main/res/drawables',
+
+
+                            'src/main/res/layouts/file_compare',
+                            'src/main/res/layouts/helper',
+                            'src/main/res/layouts/keyboard',
+                            'src/main/res/layouts/dialogs',
+                            'src/main/res/layouts/file_manager',
+                            'src/main/res/layouts/hex_display',
+                            'src/main/res/layouts/home_screen',
+                            'src/main/res/layouts/settings_menu',
+                            'src/main/res/layouts/tabler',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+// Google Play services Gradle plugin
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'com.google.android.gms:play-services-ads-lite:19.2.0'
+
+    // Scale all views with new value
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    implementation 'com.google.android.gms:play-services-ads:19.2.0'
+
+
+    // Add the Firebase Crashlytics dependency.
+    // (Recommended) Add the Google Analytics dependency.
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
+    implementation 'com.google.firebase:firebase-crashlytics:17.1.1'
+
+
+    // FIREBASE: Messaging
+//    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+
+    // MULTIDEX
+    // Error: Cannot fit requested classes in a single dex file (# methods: 112626 > 65536)
+    implementation 'androidx.multidex:multidex:2.0.1'
+}

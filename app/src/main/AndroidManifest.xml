@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android = "http://schemas.android.com/apk/res/android"
+          xmlns:tools = "http://schemas.android.com/tools"
+          package = "com.GenesysEast.windhex">
+
+
+    <uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name = "android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name = "android.permission.INTERNET" />
+
+
+    <application
+            android:allowBackup = "true"
+            android:icon = "@mipmap/ic_appicon"
+            android:label = "@string/app_name"
+            android:requestLegacyExternalStorage = "true"
+            android:roundIcon = "@mipmap/ic_appicon_round"
+            android:supportsRtl = "true"
+            android:theme = "@style/GrayTheme"
+            tools:ignore = "GoogleAppIndexingWarning">
+
+        <!--android:requestLegacyExternalStorage = "true"-->
+        <!--
+        //########################################
+        //
+        // App ID which adds Ad support, etc...
+        //
+        //########################################
+        -->
+        <meta-data
+                android:name = "com.google.android.gms.ads.APPLICATION_ID"
+                android:value = "ca-app-pub-7978336361271355~3276179698" />
+
+        <meta-data
+                android:name = "firebase_crashlytics_collection_enabled"
+                android:value = "${crashlyticsCollectionEnabled}" />
+
+        <!--
+        //#########################################
+        //
+        // Home screen Activity
+        //
+        //#########################################
+        -->
+        <activity
+                android:name = ".home_screen.HomeActivity"
+                android:configChanges = "keyboardHidden">
+            <intent-filter>
+                <action android:name = "android.intent.action.MAIN" />
+                <category android:name = "android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--
+            //############################
+            //
+            // Intent to use "open with"
+            //
+            //############################
+            -->
+            <intent-filter>
+                <action android:name = "android.intent.action.VIEW" />
+                <action android:name = "android.intent.action.EDIT" />
+                <action android:name = "android.intent.action.CHOOSER" />
+
+                <category android:name = "android.intent.category.DEFAULT" />
+                <category android:name = "android.intent.category.ALTERNATIVE" />
+                <category android:name = "android.intent.category.INFO" />
+
+                <data
+                        android:mimeType = "file/*"
+                        android:scheme = "file" />
+                <data android:host = "*" />
+
+                <data
+                        android:mimeType = "*/*"
+                        android:scheme = "file" />
+                <data android:host = "*" />
+
+                <data
+                        android:mimeType = "file/*"
+                        android:scheme = "content" />
+                <data android:host = "*" />
+            </intent-filter>
+        </activity>
+
+
+        <!--
+
+            Hex display Activity
+        -->
+        <activity
+                android:name = ".WindHexActivity"
+                android:configChanges = "keyboardHidden" />
+
+        <!--
+            System settings Activity
+        -->
+        <activity
+                android:name = ".settings_menu.settings_activity"
+                android:configChanges = "keyboardHidden" />
+
+        <!--
+            Table editor Activity
+        -->
+        <activity
+                android:name = ".table_maker.table_activity"
+                android:configChanges = "keyboardHidden"
+                android:windowSoftInputMode = "stateHidden" />
+
+        <!--
+            Help screen Activity
+        -->
+        <activity
+                android:name = ".helper.helper_activity"
+                android:configChanges = "orientation|keyboardHidden|screenSize"
+                android:windowSoftInputMode = "stateHidden" />
+
+        <!--
+            File comparing s Activity
+        -->
+        <activity
+                android:name = ".file_compare.file_compare"
+                android:configChanges = "orientation|keyboardHidden|screenSize"
+                android:windowSoftInputMode = "stateHidden" />
+
+    </application>
+
+</manifest>

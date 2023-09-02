@@ -1,0 +1,530 @@
+<resources xmlns:tools = "http://schemas.android.com/tools">
+
+    <!-- Default Alert Dialog Theme -->
+    <style name = "Theme.Alert"
+           parent = "Theme.AppCompat.Dialog.Alert">
+        <item name = "android:windowBackground">?attr/myAlertBG</item>
+    </style>
+
+
+    <!--
+    //##################################################
+    //
+    // Default Theme
+    //
+    //##################################################
+    -->
+    <style name = "GreenTheme"
+           parent = "Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name = "colorAccent">@color/greenAccent</item>
+        <item name = "colorPrimary">@color/greenPrimary</item>
+        <item name = "colorPrimaryDark">@color/greenPrimaryDark</item>
+        <item name = "colorButtonNormal">@color/greenButton</item>
+
+        <!-- Drawer Background color, Text colors -->
+        <item name = "android:windowBackground">@color/greenBackGround</item>
+
+        <item name = "android:textColorPrimary">@android:color/white</item>
+        <item name = "android:textColorSecondary">@android:color/white</item>
+
+
+        <!-- Custom attributes -->
+        <item name = "myBackground">@color/greenBackGround</item>
+        <item name = "myIconColor">@android:color/white</item>
+        <item name = "myAlertBG">@color/greenPrimaryDark</item>
+
+        <item name = "hexColorPrimary">@android:color/white</item>
+        <item name = "hexColorSecondary">@color/greenButton</item>
+        <item name = "menuTextColor">@android:color/white</item>
+
+        <!-- Toolbar issues?? -->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+
+        <item name = "android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- -->
+        <item name = "myButton">@drawable/green_button_states</item>
+        <item name = "myToolbar">@drawable/green_toolbar</item>
+        <item name = "myListSelector">@drawable/green_listview_selector</item>
+        <item name = "android:itemBackground">@drawable/green_menu_selector</item>
+        <item name = "myDialogBox">@drawable/green_dialog_box</item>
+        <item name = "myBasicBox">@drawable/green_basic_box</item>
+        <item name = "myContainer">@drawable/green_container_box</item>
+
+        <!-- Color list for gradients -->
+        <item name = "myColorList">@array/green_color_list</item>
+
+        <!-- Progress Bar -->
+        <item name = "mySeekBar">@drawable/green_seekbar</item>
+        <item name = "mySwitch">@drawable/green_switch_thumb</item>
+
+        <!-- Button styling -->
+        <item name = "buttonStyle">@style/CustomButton</item>
+
+    </style>
+
+
+    <style name = "DarkGreenTheme"
+           parent = "Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name = "colorAccent">@color/darkGreenAccent</item>
+        <item name = "colorPrimary">@color/darkGreenPrimary</item>
+        <item name = "colorPrimaryDark">@color/darkGreenPrimaryDark</item>
+        <item name = "colorButtonNormal">@color/darkGreenButton</item>
+
+        <!-- Drawer Background color, Text colors -->
+        <item name = "android:windowBackground">@color/darkGreenBackGround</item>
+
+        <item name = "android:textColorPrimary">@android:color/white</item>
+        <item name = "android:textColorSecondary">@android:color/white</item>
+
+
+        <!-- Custom attributes -->
+        <item name = "myBackground">@color/darkGreenBackGround</item>
+        <item name = "myIconColor">@android:color/white</item>
+        <item name = "myAlertBG">@color/darkGreenPrimaryDark</item>
+
+        <item name = "hexColorPrimary">@android:color/white</item>
+        <item name = "hexColorSecondary">@color/darkGreenButton</item>
+        <item name = "menuTextColor">@android:color/white</item>
+
+        <!-- Toolbar issues?? -->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+
+        <item name = "android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- -->
+        <item name = "myButton">@drawable/dark_green_button_states</item>
+        <item name = "myToolbar">@drawable/dark_green_toolbar</item>
+        <item name = "myListSelector">@drawable/dark_green_listview_selector</item>
+        <item name = "android:itemBackground">@drawable/dark_green_menu_selector</item>
+        <item name = "myDialogBox">@drawable/dark_green_dialog_box</item>
+        <item name = "myBasicBox">@drawable/dark_green_basic_box</item>
+        <item name = "myContainer">@drawable/dark_green_container_box</item>
+
+        <!-- Color list for gradients -->
+        <item name = "myColorList">@array/dark_green_color_list</item>
+
+        <!-- Progress Bar -->
+        <item name = "mySeekBar">@drawable/dark_green_seekbar</item>
+        <item name = "mySwitch">@drawable/dark_green_switch_thumb</item>
+
+        <!-- Button styling -->
+        <item name = "buttonStyle">@style/CustomButton</item>
+
+    </style>
+
+
+    <!--
+    //##################################################
+    //
+    // Light Theme
+    //
+    //##################################################
+    -->
+    <style name = "WhiteTheme"
+           parent = "Theme.AppCompat.Light.DarkActionBar">
+
+        <item name = "colorAccent">@color/whiteAccent</item>
+        <item name = "colorPrimary">@color/whitePrimary</item>
+        <item name = "colorPrimaryDark">@color/whitePrimaryDark</item>
+        <item name = "colorButtonNormal">@color/whiteButton</item>
+        <item name = "android:windowBackground">@color/whiteBackGround</item>
+
+        <item name = "android:textColorPrimary">@android:color/black</item>
+        <item name = "android:textColorSecondary">@android:color/black</item>
+
+        <!-- Custom attributes -->
+        <item name = "myBackground">@android:color/white</item>
+        <item name = "myIconColor">@android:color/black</item>
+        <item name = "myAlertBG">@android:color/black</item>
+
+        <item name = "hexColorPrimary">@android:color/black</item>
+        <item name = "hexColorSecondary">@color/whiteAccent</item>
+        <item name = "menuTextColor">@android:color/white</item>
+
+        <!-- Toolbar issues?? -->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+
+        <item name = "android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- -->
+        <item name = "myButton">@drawable/white_button_states</item>
+        <item name = "myToolbar">@drawable/white_toolbar</item>
+        <item name = "myListSelector">@drawable/white_listview_selector</item>
+        <item name = "android:itemBackground">@drawable/white_menu_selector</item>
+        <item name = "myDialogBox">@drawable/white_dialog_box</item>
+        <item name = "myBasicBox">@drawable/white_basic_box</item>
+        <item name = "myContainer">@drawable/white_container_box</item>
+
+        <!-- Color list for gradients -->
+        <item name = "myColorList">@array/white_color_list</item>
+
+        <!-- Progress Bar -->
+        <item name = "mySeekBar">@drawable/white_seekbar</item>
+        <item name = "mySwitch">@drawable/white_switch_thumb</item>
+
+        <!-- Button styling -->
+        <item name = "buttonStyle">@style/CustomButton</item>
+
+    </style>
+
+
+    <!--
+    //##################################################
+    //
+    // Light Theme
+    //
+    //##################################################
+    -->
+    <style name = "PurpleTheme"
+           parent = "Theme.AppCompat.Light.DarkActionBar">
+
+        <item name = "colorAccent">@color/purpleAccent</item>
+        <item name = "colorPrimary">@color/purplePrimary</item>
+        <item name = "colorPrimaryDark">@color/purplePrimaryDark</item>
+        <item name = "colorButtonNormal">@color/purpleButton</item>
+        <item name = "android:windowBackground">@color/purpleBackGround</item>
+
+        <item name = "android:textColorPrimary">@android:color/white</item>
+        <item name = "android:textColorSecondary">@android:color/white</item>
+
+        <!-- Custom attributes -->
+        <item name = "myBackground">@color/purpleBackGround</item>
+        <item name = "myIconColor">@android:color/white</item>
+        <item name = "myAlertBG">@color/purplePrimaryDark</item>
+
+        <item name = "hexColorPrimary">@android:color/white</item>
+        <item name = "hexColorSecondary">@color/purpleButton</item>
+        <item name = "menuTextColor">@android:color/white</item>
+
+        <!-- Toolbar issues?? -->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+
+        <item name = "android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- -->
+        <item name = "myButton">@drawable/purple_button_states</item>
+        <item name = "myToolbar">@drawable/purple_toolbar</item>
+        <item name = "myListSelector">@drawable/purple_listview_selector</item>
+        <item name = "android:itemBackground">@drawable/purple_menu_selector</item>
+        <item name = "myDialogBox">@drawable/purple_dialog_box</item>
+        <item name = "myBasicBox">@drawable/purple_basic_box</item>
+        <item name = "myContainer">@drawable/purple_container_box</item>
+
+        <!-- Color list for gradients -->
+        <item name = "myColorList">@array/purple_color_list</item>
+
+        <!-- Progress Bar -->
+        <item name = "mySeekBar">@drawable/purple_seekbar</item>
+        <item name = "mySwitch">@drawable/purple_switch_thumb</item>
+
+        <!-- Button styling -->
+        <item name = "buttonStyle">@style/CustomButton</item>
+
+    </style>
+
+
+    <!--
+    //##################################################
+    //
+    // Gray scale Theme
+    //
+    //##################################################
+    -->
+    <style name = "GrayTheme"
+           parent = "Theme.AppCompat.Light.DarkActionBar">
+        <item name = "colorAccent">@color/grayAccent</item>
+        <item name = "colorPrimary">@color/grayPrimary</item>
+        <item name = "colorPrimaryDark">@color/grayPrimaryDark</item>
+        <item name = "colorButtonNormal">@color/grayButton</item>
+        <item name = "android:windowBackground">@color/grayBackGround</item>
+
+        <!-- Drawer Menu text colors -->
+        <item name = "android:textColorPrimary">@android:color/white</item>
+        <item name = "android:textColorSecondary">@android:color/darker_gray</item>
+
+        <!-- Custom attributes -->
+        <item name = "myBackground">@color/grayBackGround</item>
+        <item name = "myIconColor">@android:color/white</item>
+        <item name = "myAlertBG">@color/grayBackGround</item>
+
+        <item name = "hexColorPrimary">@android:color/white</item>
+        <item name = "hexColorSecondary">@color/grayButton</item>
+        <item name = "menuTextColor">@android:color/white</item>
+
+        <!-- Toolbar issues?? -->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+
+        <item name = "android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- -->
+        <item name = "myButton">@drawable/gray_button_states</item>
+        <item name = "myToolbar">@drawable/gray_toolbar</item>
+        <item name = "myListSelector">@drawable/gray_listview_selector</item>
+        <item name = "android:itemBackground">@drawable/gray_menu_selector</item>
+        <item name = "myDialogBox">@drawable/gray_dialog_box</item>
+        <item name = "myBasicBox">@drawable/gray_basic_box</item>
+        <item name = "myContainer">@drawable/gray_container_box</item>
+
+        <!-- Color list for gradients -->
+        <item name = "myColorList">@array/gray_color_list</item>
+
+        <!-- Progress Bar -->
+        <item name = "mySeekBar">@drawable/gray_seekbar</item>
+        <item name = "mySwitch">@drawable/gray_switch_thumb</item>
+
+        <!-- Button styling -->
+        <item name = "buttonStyle">@style/CustomButton</item>
+
+    </style>
+
+
+    <!--
+    //##################################################
+    //
+    // Water Theme
+    //
+    //##################################################
+    -->
+    <style name = "WaterTheme"
+           parent = "Theme.AppCompat.Light.DarkActionBar">
+
+        <item name = "colorAccent">@color/waterAccent</item>
+        <item name = "colorPrimary">@color/waterPrimary</item>
+        <item name = "colorPrimaryDark">@color/waterPrimaryDark</item>
+        <item name = "colorButtonNormal">@color/waterButton</item>
+        <item name = "android:windowBackground">@color/waterBackGround</item>
+
+        <!-- Drawer Menu text colors -->
+        <item name = "android:textColorPrimary">@android:color/white</item>
+        <item name = "android:textColorSecondary">@android:color/white</item>
+
+        <!-- Custom attributes -->
+        <item name = "myBackground">@color/waterBackGround</item>
+        <item name = "myIconColor">@android:color/white</item>
+        <item name = "myAlertBG">@color/waterPrimaryDark</item>
+
+        <item name = "hexColorPrimary">@android:color/white</item>
+        <item name = "hexColorSecondary">@color/waterButton</item>
+        <item name = "menuTextColor">@android:color/white</item>
+
+        <!-- Toolbar issues?? -->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+        <item name = "android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- -->
+        <item name = "myButton">@drawable/blue_button_states</item>
+        <item name = "myToolbar">@drawable/blue_toolbar</item>
+        <item name = "myListSelector">@drawable/blue_listview_selector</item>
+        <item name = "android:itemBackground">@drawable/blue_menu_selector</item>
+        <item name = "myDialogBox">@drawable/blue_dialog_box</item>
+        <item name = "myBasicBox">@drawable/blue_basic_box</item>
+        <item name = "myContainer">@drawable/blue_container_box</item>
+
+        <!-- Color list for gradients -->
+        <item name = "myColorList">@array/blue_color_list</item>
+
+        <!-- Progress Bar -->
+        <item name = "mySeekBar">@drawable/blue_seekbar</item>
+        <item name = "mySwitch">@drawable/blue_switch_thumb</item>
+
+        <!-- Button styling -->
+        <item name = "buttonStyle">@style/CustomButton</item>
+
+    </style>
+
+
+    <style name = "DarkWaterTheme"
+           parent = "Theme.AppCompat.Light.DarkActionBar">
+
+        <item name = "colorAccent">@color/darkWaterAccent</item>
+        <item name = "colorPrimary">@color/darkWaterPrimary</item>
+        <item name = "colorPrimaryDark">@color/darkWaterPrimaryDark</item>
+        <item name = "colorButtonNormal">@color/darkWaterButton</item>
+        <item name = "android:windowBackground">@color/darkWaterBackGround</item>
+
+        <!-- Drawer Menu text colors -->
+        <item name = "android:textColorPrimary">@android:color/white</item>
+        <item name = "android:textColorSecondary">@android:color/white</item>
+
+        <!-- Custom attributes -->
+        <item name = "myBackground">@color/darkWaterBackGround</item>
+        <item name = "myIconColor">@android:color/white</item>
+        <item name = "myAlertBG">@color/darkWaterPrimaryDark</item>
+
+        <item name = "hexColorPrimary">@android:color/white</item>
+        <item name = "hexColorSecondary">@color/darkWaterButton</item>
+        <item name = "menuTextColor">@android:color/white</item>
+
+        <!-- Toolbar issues?? -->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+        <item name = "android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- -->
+        <item name = "myButton">@drawable/dark_blue_button_states</item>
+        <item name = "myToolbar">@drawable/dark_blue_toolbar</item>
+        <item name = "myListSelector">@drawable/dark_blue_listview_selector</item>
+        <item name = "android:itemBackground">@drawable/dark_blue_menu_selector</item>
+        <item name = "myDialogBox">@drawable/dark_blue_dialog_box</item>
+        <item name = "myBasicBox">@drawable/dark_blue_basic_box</item>
+        <item name = "myContainer">@drawable/dark_blue_container_box</item>
+
+        <!-- Color list for gradients -->
+        <item name = "myColorList">@array/dark_blue_color_list</item>
+
+        <!-- Progress Bar -->
+        <item name = "mySeekBar">@drawable/dark_blue_seekbar</item>
+        <item name = "mySwitch">@drawable/dark_blue_switch_thumb</item>
+
+        <!-- Button styling -->
+        <item name = "buttonStyle">@style/CustomButton</item>
+
+    </style>
+
+    <!--
+    //##################################################
+    //
+    // Fire Theme
+    //
+    //##################################################
+    -->
+    <style name = "FireTheme"
+           parent = "Theme.AppCompat.Light.DarkActionBar">
+
+        <item name = "colorAccent">@color/fireAccent</item>
+        <item name = "colorPrimary">@color/firePrimary</item>
+        <item name = "colorPrimaryDark">@color/firePrimaryDark</item>
+        <item name = "colorButtonNormal">@color/fireButton</item>
+        <item name = "android:windowBackground">@color/fireBackGround</item>
+
+        <!-- Drawer Menu text colors -->
+        <item name = "android:textColorPrimary">@android:color/white</item>
+        <item name = "android:textColorSecondary">@android:color/white</item>
+
+        <!-- Custom attributes -->
+        <item name = "myBackground">@color/fireBackGround</item>
+        <item name = "myIconColor">@android:color/white</item>
+        <item name = "myAlertBG">@color/firePrimaryDark</item>
+
+        <item name = "hexColorPrimary">@android:color/white</item>
+        <item name = "hexColorSecondary">@color/fireButton</item>
+        <item name = "menuTextColor">@android:color/white</item>
+
+        <!-- Toolbar issues?? -->
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+
+        <item name = "android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- -->
+        <item name = "myButton">@drawable/red_button_states</item>
+        <item name = "myToolbar">@drawable/red_toolbar</item>
+        <item name = "myListSelector">@drawable/red_listview_selector</item>
+        <item name = "android:itemBackground">@drawable/red_menu_selector</item>
+        <item name = "myDialogBox">@drawable/red_dialog_box</item>
+        <item name = "myBasicBox">@drawable/red_basic_box</item>
+        <item name = "myContainer">@drawable/red_container_box</item>
+
+        <!-- Color list for gradients -->
+        <item name = "myColorList">@array/red_color_list</item>
+
+        <!-- Progress Bar -->
+        <item name = "mySeekBar">@drawable/red_seekbar</item>
+        <item name = "mySwitch">@drawable/red_switch_thumb</item>
+
+        <!-- Button styling -->
+        <item name = "buttonStyle">@style/CustomButton</item>
+    </style>
+
+
+    <style name = "Spinner.Stylistic"
+           parent = "">
+        <item name = "android:background">?colorPrimaryDark</item>
+    </style>
+
+    <!--
+    //#########################################
+    //
+    // Toolbar theme data; All Themes
+    //
+    //#########################################
+     -->
+    <style name = "Theme.AppBarOverlay"
+           parent = "ThemeOverlay.AppCompat">
+        <!-- Controls Menu Text color -->
+        <item name = "android:textColorPrimary">?attr/menuTextColor</item>
+        <item name = "android:textSize">@dimen/list_text_size</item>
+
+        <item name = "android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name = "actionButtonStyle">@style/myActionButtonStyle</item>
+
+        <!-- Overflow menu styling -->
+        <item name = "actionOverflowMenuStyle">@style/OptionsMenuCustomStyle</item>
+        <!-- < v21-->
+        <item name = "listPreferredItemHeightSmall">@dimen/_30sdp</item>
+        <!-- v21 >-->
+        <item name = "android:listPreferredItemHeightSmall">@dimen/_30sdp</item>
+        <!--
+                <item name="listPreferredItemPaddingStart">0dp</item>
+                <item name="listPreferredItemPaddingLeft">0dp</item>
+                <item name="listPreferredItemPaddingRight">0dp</item>
+                <item name="listPreferredItemPaddingEnd">0dp</item>
+        -->
+
+
+        <!-- Controls Options Menu and Overflow icon color Text color-->
+        <!--        <item name="android:textColorSecondary">?attr/colorAccent</item>-->
+        <!-- Controls Options Menu window background color -->
+        <!--                <item name = "android:itemBackground">@drawable/red_menu_selector</item>-->
+        <!--        <item name="android:colorBackground">?attr/colorPrimaryDark</item>-->
+    </style>
+
+    <style name = "CustomActivityAnimation"
+           parent = "@android:style/Animation.Activity">
+        <item name = "android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name = "android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name = "android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name = "android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+
+    <style name = "DialogAnimations">
+        <item name = "android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name = "android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+
+    <!-- Standard Button Style -->
+    <style name = "CustomButton"
+           parent = "Widget.AppCompat.Button">
+        <item name = "android:minHeight">@dimen/_24sdp</item>
+        <item name = "android:minWidth">@dimen/_52sdp</item>
+    </style>
+
+    <!-- Action Button settings -->
+    <style name = "myActionButtonStyle"
+           parent = "Widget.AppCompat.ActionButton">
+        <item name = "android:minWidth">0dp</item>
+        <item name = "android:width">@dimen/_28sdp</item>
+    </style>
+
+    <!-- Overflow menu box size -->
+    <style name = "OptionsMenuCustomStyle"
+           parent = "Widget.AppCompat.PopupMenu.Overflow">
+        <item name = "overlapAnchor">false</item>
+        <item name = "android:overlapAnchor"
+              tools:ignore = "NewApi">false
+        </item>
+        <item name = "android:dropDownWidth">@dimen/_10sdp</item>
+        <!--        <item name="android:dropDownVerticalOffset">4.0dip</item>-->
+    </style>
+</resources>

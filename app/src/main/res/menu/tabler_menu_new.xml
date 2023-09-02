@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app = "http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id = "@+id/optSave"
+            android:title = "@string/table_save_table"/>
+    <item
+            android:id = "@+id/optSort"
+            android:title = "@string/table_sort_entries"/>
+    <item
+            android:id = "@+id/optClear"
+            android:title = "@string/clear_table"/>
+    <item
+            android:id = "@+id/optDefault"
+            android:title = "@string/table_create_default"/>
+    <item
+            android:id = "@+id/optHelp"
+            android:title = "@string/table_help"/>
+    <item
+            android:icon = "@drawable/table_undo"
+            android:id = "@+id/optUndo"
+            app:showAsAction = "always"
+            android:title = "@string/table_undo"/>
+</menu>

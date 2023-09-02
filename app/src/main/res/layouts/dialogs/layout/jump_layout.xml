@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android = "http://schemas.android.com/apk/res/android"
+        xmlns:app = "http://schemas.android.com/apk/res-auto"
+        xmlns:tools = "http://schemas.android.com/tools"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id = "@+id/titleLayout"
+            android:layout_width = "@dimen/_220sdp"
+            android:layout_height = "@dimen/_200sdp"
+            android:background = "?myDialogBox"
+            android:orientation = "horizontal"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent">
+
+        <!--
+        //###########################
+        //
+        // Header
+        //
+        //###########################
+        -->
+        <com.GenesysEast.windhex.CustomControls.GradientTextView
+                android:id = "@+id/recentFilesHeader"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:gravity = "center"
+                android:text = "@string/jump_title"
+                android:textColor = "?attr/menuTextColor"
+                android:textSize = "@dimen/header_text_size"
+                app:colorList = "?myColorList"
+                app:gradient = "on"
+                app:layout_constraintEnd_toStartOf = "@id/cancelJump"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:layout_constraintBottom_toTopOf="@id/spinnerFrame"
+                app:strokeColor = "@android:color/black"
+                app:strokeWidth = "@dimen/_2sdp" />
+
+        <ImageView
+                android:id = "@+id/cancelJump"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:background = "?android:itemBackground"
+                android:contentDescription = "@string/dialog_close_button_desc"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintBottom_toTopOf="@id/spinnerFrame"
+                app:layout_constraintStart_toEndOf = "@id/recentFilesHeader"
+                app:layout_constraintTop_toTopOf = "parent"
+                app:srcCompat = "@drawable/close_x" />
+
+
+        <!--
+        //###########################
+        //
+        // Address Selection
+        //
+        //###########################
+        -->
+        <FrameLayout
+                android:id = "@+id/spinnerFrame"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:padding = "@dimen/_1sdp"
+                app:layout_constraintBottom_toTopOf = "@id/offsetInput"
+                app:layout_constraintTop_toBottomOf = "@id/recentFilesHeader">
+
+            <Spinner
+                    android:id = "@+id/addressSpinner"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+                    android:spinnerMode = "dropdown"
+                    android:theme = "@style/Spinner.Stylistic"
+                    tools:listitem = "@layout/tabler_spinner_item" />
+        </FrameLayout>
+
+        <!--
+        //###########################
+        //
+        // Offset text enter
+        //
+        //###########################
+        -->
+        <EditText
+                android:id = "@+id/offsetInput"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:background = "@android:color/white"
+                android:digits = "0123456789ABCDEFabcdef"
+                android:ems = "10"
+                android:hint = "@string/jump_input_hint"
+                android:imeOptions = "flagNoFullscreen"
+                android:inputType = "textVisiblePassword|textNoSuggestions"
+                android:padding = "@dimen/_2sdp"
+                android:textColor = "@android:color/black"
+                android:textSize = "@dimen/edittext_text_size"
+                android:textStyle = "bold"
+                app:layout_constraintBottom_toTopOf="@id/gotoListFrame"
+                app:layout_constraintTop_toBottomOf = "@id/spinnerFrame" />
+
+
+        <!--
+        //###########################
+        //
+        // Jump list view
+        //
+        //###########################
+        -->
+        <FrameLayout
+                android:id = "@+id/gotoListFrame"
+                android:layout_width = "match_parent"
+                android:layout_height = "0dp"
+                android:layout_marginTop = "@dimen/_4sdp"
+                android:layout_marginBottom = "@dimen/_4sdp"
+                android:background = "?myContainer"
+                android:padding = "@dimen/_4sdp"
+                app:layout_constraintBottom_toTopOf = "@id/gotoButton"
+                app:layout_constraintTop_toBottomOf = "@id/offsetInput">
+
+            <ListView
+                    android:id = "@+id/gotoList"
+                    android:layout_width = "match_parent"
+                    android:layout_height = "match_parent"
+                    android:background = "?colorPrimaryDark"
+                    android:dividerHeight = "@dimen/_1sdp"
+                    tools:listitem = "@layout/jump_item" />
+        </FrameLayout>
+
+
+        <!--
+        //###########################
+        //
+        // Dialog buttons
+        //
+        //###########################
+        -->
+
+        <Button
+                android:id = "@+id/cancelButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginEnd = "@dimen/_4sdp"
+                android:layout_marginRight = "@dimen/_4sdp"
+                android:background = "?android:itemBackground"
+                android:textSize = "@dimen/button_text_size"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toStartOf = "@id/gotoButton"
+                app:layout_constraintTop_toTopOf = "@id/gotoButton"
+                app:layout_constraintVertical_bias = "0.0"
+                tools:text = "@string/jump_cancel" />
+
+        <Button
+                android:id = "@+id/gotoButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:background = "?android:itemBackground"
+                android:textSize = "@dimen/button_text_size"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@id/gotoListFrame"
+                tools:text = "@string/jump_done" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
